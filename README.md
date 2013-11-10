@@ -1,4 +1,5 @@
-a-brief-history-of-the-word
-===========================
+# A brief history of the word
 
-Scaleconf 2014 talk submission
+[ScaleConf](http://scaleconf.org) 2014 talk submission
+
+http://michaeljoseph.github.io/a-brief-history-of-the-word
