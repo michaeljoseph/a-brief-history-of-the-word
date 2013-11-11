@@ -20,8 +20,8 @@ We start in the middle, with me thinking about words. As I do.
 Because I'm a book nerd from back when there was no internet
 (it's true kids, there was such a dark moment in our history).
 
-Then it occurred to me- words may be the smallest useful unit of communication
-that we've invented- lots of people live by reading, writing, editing, reviewing,
+It, then occurred to me- words may be the smallest useful unit of communication
+that we've invented. Many people live by reading, writing, editing, reviewing,
 publishing, printing, advertising and interacting with words.
 
 The text editing that I perform (for work and play) to make ethereally
@@ -39,19 +39,19 @@ Internet.
 Then I thought about how far back this wordiness of ours goes and arrived at
 a seemingly original hypothesis that I'd like to defend:
 
-The word was our first tool and is the essential invention that has allowed us
-to dominate this planet, which we share with our fellow animal species (aka 
-natural resources).
+    The word was our first tool and is the essential invention that has allowed
+    us to dominate this planet. To the detriment of ourselves and the animal
+    species we share this planet with (aka natural resources)
 
 To establish context, I trace the history of the word. From pre- and non-verbal
 communication, through language, ideograms, letters, words, writing and writing
-things down).
+things down.
 
 I examine the current state of the art (this is the internet part) and fret about
 the apparent decline in the usage of words.
 
 Finally, I attempt to extrapolate existing trends to provide a speculative view
 of a machine-aided future. And attempt to develop a methodology to detect and 
-prepare for, the coming of our robot overloads (think Zombie Apocalypse Handbook).
+prepare for the coming of our robot overloads (think Zombie Apocalypse Handbook).
 
 Then applause and AMA.
