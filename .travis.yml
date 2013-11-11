@@ -1,0 +1,14 @@
+language: python
+python:
+    - "2.7"
+install:
+    - pip install -r requirements.txt --use-mirrors
+script:
+    - mkdir remark
+    - remarkable remark talk/a-brief-history-of-the-word.md remark
+    - mv remark.html remark/index.html
+    - ghp-import remark
+    - git push origin gh-pages
+
+after_success:
+  - rm -rf remark
