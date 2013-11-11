@@ -20,16 +20,17 @@ We start in the middle, with me thinking about words. As I do.
 Because I'm a book nerd from back when there was no internet
 (it's true kids, there was such a dark moment in our history).
 
-And then it occurred to me, that words may be the smallest useful unit of
-communication that we've invented- lots of different people live by reading,
-writing, editing, reviewing, publishing, printing, advertising and interacting
-with words.
+Then it occurred to me- words may be the smallest useful unit of communication
+that we've invented- lots of people live by reading, writing, editing, reviewing,
+publishing, printing, advertising and interacting with words.
 
-Also, that the text editing that I do to make ethereally ephemeral computers
-do my bidding, is in essence no different from a journalist's
+The text editing that I perform (for work and play) to make ethereally
+ephemeral computers do my bidding, is in essence, no different from that of a 
+journalist. Or a technical writer, novelist, playwright or screenplay writer
 (save in domain, workflow, history, politics and FUD).
 
-There's a reason that we keep re-inventing text editors and why text editing
+There is a reason that we keep re-inventing text editors (Google says 'about
+397,000,000 results' for 'text editor') and why text editing
 programs are amongst the oldest, most mature and widely deployed software we
 have. Hint: it's also the reason people get religious about them.
 They were and are integral to the creation, maintenance and expansion of the
@@ -42,13 +43,15 @@ The word was our first tool and is the essential invention that has allowed us
 to dominate this planet, which we share with our fellow animal species (aka 
 natural resources).
 
-We trace the history of the word (starting with non-verbal communications,
-language, ideograms, letters, words, writing and writing things down).
+To establish context, I trace the history of the word. From pre- and non-verbal
+communication, through language, ideograms, letters, words, writing and writing
+things down).
 
-We examine the current state of the art and fret about the apparent decline in
-the usage of words.
+I examine the current state of the art (this is the internet part) and fret about
+the apparent decline in the usage of words.
 
-We finally attempt to extrapolate existing trends to provide a speculative picture of
-a machine-aided future and the inception of our signular minded robot overloads.
+Finally, I attempt to extrapolate existing trends to provide a speculative view
+of a machine-aided future. And attempt to develop a methodology to detect and 
+prepare for, the coming of our robot overloads (think Zombie Apocalypse Handbook).
 
 Then applause and AMA.
