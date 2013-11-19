@@ -20,7 +20,7 @@ We start in the middle, with me thinking about words. As I do.
 Because I'm a book nerd from back when there was no internet
 (it's true kids, there was such a dark moment in our history).
 
-It, then occurred to me- words may be the smallest useful unit of communication
+It then occurred to me- words may be the smallest useful unit of communication
 that we've invented. Many people live by reading, writing, editing, reviewing,
 publishing, printing, advertising and interacting with words.
 

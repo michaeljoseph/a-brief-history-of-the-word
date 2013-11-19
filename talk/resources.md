@@ -1,5 +1,8 @@
 # resources
 
+- #start talk background image
+- #pft night time on the internet
+
 - #5 wordle frequency cloud of something novel
 - #6 gaiman's library
 - #7 20-30s of fingers with PHP thrashing
