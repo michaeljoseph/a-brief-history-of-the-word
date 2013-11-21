@@ -15,7 +15,8 @@
 #11 outline
 
 [BEFORE]
-#12/13 ug lee and the history of vocalisation
+#12 evolution
+#13 ug lee and the history of vocalisation
 #14 primates
 #15 what does the fox say?
 #16 oral tradition

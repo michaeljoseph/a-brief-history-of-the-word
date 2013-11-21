@@ -114,6 +114,7 @@ title: outline
 * now
 * then
 ???
+#11
 To support my claim, we'll do a brief jaunt through history. A brief history of the word, as it were <falsetto>call back!</falsetto>
 
 I'll attempt to trace the history of the word, from pre- and non-verbal
@@ -128,8 +129,13 @@ of a machine-aided future. And attempt to develop a methodology to detect and
 prepare for the coming of our robot overloads (think Zombie Apocalypse Handbook).
 ---
 section: before
+title: evolution
 ???
-#12/13 ug lee and the history of vocalisation
+#12
+---
+title: ug-lee
+???
+#13 ug lee and the history of vocalisation
 ---
 
 ???
