@@ -1,4 +1,5 @@
 title: start
+section: intro
 # a brief history of the word
 
 http://michaeljoseph.github.io/a-brief-history-of-the-word
@@ -22,8 +23,8 @@ title: about-me
 #3
 Presentation habits
 - looking at the projector
-- rambly, too fast, i mumble and eat my words
-- tell me when i'm looking at the projector please
+- I'm rambly, I talk too fast, I mumble and eat my words
+- Please tell me when I'm looking at the projector
 ---
 title: opinions
 # opinions
@@ -41,6 +42,7 @@ This talk is opinionated, I make a few bold claims, I think that's even the titl
 of one of my slides [look, gaffe], make up a lot of historical sounding stuff
 ---
 title: genesis
+section: claim
 ![genesis](adam-god.png)
 ???
 #5
@@ -100,7 +102,7 @@ type: media
 #9.5
 ---
 title: claim-recap
-word=spanner
+![word-tool](resources/word_tool.png)
 ![internet-badges](resources/internet_badges.png)
 ???
 #10
@@ -125,8 +127,182 @@ Finally, I attempt to extrapolate existing trends to provide a speculative view
 of a machine-aided future. And attempt to develop a methodology to detect and 
 prepare for the coming of our robot overloads (think Zombie Apocalypse Handbook).
 ---
+section: before
+???
+#12/13 ug lee and the history of vocalisation
+---
+
+???
+#14 primates
+---
+
+???
+#15 what does the fox say?
+---
+
+???
+#16 oral tradition
+---
+
+???
+#17 http://en.wikipedia.org/wiki/Pompeii
+---
+
+???
+#18 define ideogram
+---
+
+???
+#19 the letter
+---
+
+???
+#20 durability
+---
+
+???
+#21 gutenberg
+---
+
+???
+#22 industrial revolution
+---
+
+???
+#23 assembly line
+---
+
+???
+#24 ipad ad
+---
+section: now
+???
+#25.1 dyac
+---
+
+???
+#25.2 memes
+---
+
+???
+#25.3 emoji
+---
+
+???
+#25.4 " dick
+---
+
+???
+#26.1 txtspk
+---
+
+???
+#26.2 status updates
+---
+
+???
+#27 define ideogram
+---
+
+???
+#28 top100 sites / word, av count
+---
+
+???
+#29 recap
+---
+section: then
+???
+#30.1 black hole
+---
+
+???
+#30.2 " sun
+---
+
+???
+#31.1 ray
+---
+
+???
+#31.2 inventions
+---
+
+???
+#31.3 "to bring natural language understanding to Google"
+---
+
+???
+#32 xkcd_internet_map.png
+---
+
+???
+#33 minipedia
+---
+
+???
+#34.1 moore's law
+---
+
+???
+#34.2 nanotechnology
+---
+
+???
+#34.3 glass
+---
+
+???
+#34.4 fos 
+---
+
+???
+#35.1 planet eating tech
+---
+
+???
+#35.2 datacenter farms
+---
+
+???
+#35.3 ecology
+---
+
+???
+#36 3D printing
+---
+
+???
+#37.1 kinect / wii
+---
+
+???
+#37.2 tan_le 
+---
+
+???
+#38 weak prediction
+---
+
+???
+#39.1 word=tool
+---
+
+???
+#39.2 lever, pole vault
+---
+
+???
+#39.3 cyborgs
+---
 title: ama
 align: center
 # AMA
 ![ama-slideshow](ama-slideshow.gif)
+???
+#40
 ---
+title: credits
+
+??
+#41
