@@ -14,7 +14,7 @@
 #10 recap
 #11 outline
 
-[HISTORY]
+[BEFORE]
 #12/13 ug lee and the history of vocalisation
 #14 primates
 #15 what does the fox say?
@@ -65,5 +65,3 @@
 #41 credits, links
 
 [FIN]
-
-[END]
