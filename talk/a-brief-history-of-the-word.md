@@ -132,54 +132,94 @@ section: before
 title: evolution
 ???
 #12
+Our story begins with Ug.
 ---
 title: ug-lee
 ???
 #13 ug lee and the history of vocalisation
+Or rather, with Ug Lee. She's developed this
+strange habit of grunting every morning in a
+certain way at the uni-browed model of neanderthal
+masculinity currently sharing her animal skins.
+He's not the brightest, but he starts to get the
+idea that this means "Get up and go and hunt us
+some breakfast!". And so he does.
+And that's how language was invented.
+By a woman. Obviously. *duck*
 ---
-
+title: primate
+![primate-tool](resources/primate_tool.png)
 ???
 #14 primates
+But that just makes us shitty monkeys. Our hairier
+cousins even make tools.
 ---
 
 ???
 #15 what does the fox say?
+There are many examples of successful non-verbal
+communication, and while perfectly suited to living
+in harmony with the ecosystem, they don't have the
+world-eating scale that the written word has enabled.
 ---
-
+title: oral
 ???
 #16 oral tradition
+I'm not knocking the grand oral tradition, it does
+have durability, but it's not redundant enough
+for my tastes.
 ---
-
+title: pompeii
+![pompeii](resources/pompeii.png)
 ???
-#17 http://en.wikipedia.org/wiki/Pompeii
+#17 Pompeii
+There is of course, the parallel universe of the...
 ---
+title: ideogram
 
+![ideogram](resources/ideogram.png)
 ???
-#18 define ideogram
+#18 ideogram
 ---
-
+title: ideograms
+![hieroglyphics](resources/hieroglyphics.png)
+![kanji](resources/kanji.png)
+and [] (eastern) symbols*.
+But I was bon in the South, not the east, so the
+part _I_ care about is....
+---
+title: letter
+![letter](resources/letter.png)
 ???
 #19 the letter
+.......
 ---
-
+title: durability
 ???
 #20 durability
+Papyruys, sandstone, parchment
 ---
-
+title: gutenberg
 ???
 #21 gutenberg
+Then the printing press
 ---
-
+title: industrial-revolution
 ???
 #22 industrial revolution
+And the industrial revolution (yawn)
 ---
-
+title: assembly-line
 ???
 #23 assembly line
+And then the good old factory-produced, capitalist,
+pig-dog fueled consumerism and....
 ---
-
+title: electronics
 ???
 #24 ipad ad
+the pornography of
+the acquisition of electronic devices
 ---
 section: now
 ???
