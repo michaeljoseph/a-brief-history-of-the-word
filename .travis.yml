@@ -7,5 +7,7 @@ script:
     - mkdir -p remark
     - remarkable remark talk/a-brief-history-of-the-word.md remark
     - mv remark.html remark/index.html
+    - mkdir -p reveal
+    - remarkable reveal talk/a-brief-history-of-the-word.md reveal
 after_success:
   - rm -rf remark
