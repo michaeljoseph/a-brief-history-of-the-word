@@ -45,7 +45,7 @@
 #34.2 nano.png
 #34.3 glass.png / mp4 (parody)
 #34.4 fos.mp4
-#35.1 earth_apple_bite.png
+#35.1 earth_apple_bite.jpg
 #35.2 datacenters.png
 #35.3 ecology.png
 #36 3d_printing.mp4
