@@ -222,133 +222,163 @@ the pornography of
 the acquisition of electronic devices
 ---
 section: now
+title: dyac
+![dyac](resources/dyac.png)
 ???
 #25.1 dyac
 ---
-
+title: memes
+![memes](resources/memes.png)
 ???
 #25.2 memes
 ---
-
+title: emoji
+![emoji](resources/emoji.png)
 ???
 #25.3 emoji
 ---
-
+title: emoji-dick
+![emoji-dick](resources/emoji_dick.png)
 ???
-#25.4 " dick
+#25.4 emoji dick
 ---
-
+title: txtspk
+![txtspk](resources/txtspk.png)
 ???
 #26.1 txtspk
 ---
-
+title: status
+![status](resources/status.png)
 ???
 #26.2 status updates
 ---
-
+title: ideogram
+![ideogram](resources/ideogram.png)
 ???
 #27 define ideogram
 ---
-
+title: internet-words
+![words](resources/words.mp4)
 ???
 #28 top100 sites / word, av count
 ---
-
+title: recap
 ???
 #29 recap
 ---
 section: then
+title: signularity
+![black_hole](resources/black_hole.png)
 ???
 #30.1 black hole
 ---
-
+title: black-hole-sun
+![black_hole_sun](resources/black_hole_sun.png)
 ???
 #30.2 " sun
 ---
-
+title: kurzweil
+![kurzweil](resources/kurzweil.png)
 ???
 #31.1 ray
 ---
-
+title: kurweil-invents
+![invents](resources/invents.png)
 ???
 #31.2 inventions
 ---
+title: google-title
+type: quote
+
+"to bring natural language understanding to Google"
 
 ???
-#31.3 "to bring natural language understanding to Google"
+#31.3 natural language
 ---
+title: xkcd-internet
+![xkcd-internet-map](resources/xkcd_internet_map.png)
 
 ???
 #32 xkcd_internet_map.png
 ---
-
+title: minipedia
 ???
 #33 minipedia
 ---
-
+title: moores-law
 ???
 #34.1 moore's law
 ---
-
+title: nanotech
 ???
 #34.2 nanotechnology
 ---
-
+title: glass
 ???
 #34.3 glass
 ---
-
+title: fos
 ???
 #34.4 fos 
 ---
-
+title: planet-eating
+![earth-bite](resources/earth_apple_bite.jpg.png)
 ???
 #35.1 planet eating tech
 ---
-
+title: datacenters
+![datacenter](resources/datacenter.png)
 ???
 #35.2 datacenter farms
 ---
-
+title: ecology
+![ecology](resources/ecology.png)
 ???
 #35.3 ecology
 ---
-
+title: 3d-printing
+![3d-printing](resources/3d.mp4)
 ???
 #36 3D printing
 ---
-
+title: games
+![wii](resources/wii.mp4)
+![kinect](resources/kinect.mp4)
 ???
 #37.1 kinect / wii
 ---
-
+title: brainwaves
+![brainwaves](resources/tan_le_brainwaves.mp4)
 ???
 #37.2 tan_le 
 ---
+title: prediction
 
 ???
 #38 weak prediction
 ---
-
+title: word-tool
+![word-tool](resources/word_tool.png)
 ???
 #39.1 word=tool
 ---
-
+title: pole-vault
+![pole-vault](resources/pole_vault.png)
 ???
 #39.2 lever, pole vault
 ---
-
+title: cyborg
+![cyborg](resources/cyborg.png)
 ???
 #39.3 cyborgs
 ---
 title: ama
 align: center
-# AMA
 ![ama-slideshow](ama-slideshow.gif)
 ???
 #40
 ---
 title: credits
 
-??
+???
 #41
