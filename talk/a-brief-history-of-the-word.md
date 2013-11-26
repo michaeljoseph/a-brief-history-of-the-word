@@ -10,7 +10,7 @@ Hi, my name is Michael, and I live on the internet.
 And sometimes, late at night on the internet
 ---
 title: pft
-![pft](night-time-on-the-internet.png)
+![pft](resources/night-time-on-the-internet.png)
 ???
 #2
 I wonder about stuff. Primarily this happens in my head, but this is part
@@ -18,7 +18,7 @@ of the process of rectifying that.
 ---
 title: about-me
 # about me
-![profile](mj.png)
+![profile](resources/mj.png)
 ???
 #3
 Presentation habits
@@ -28,8 +28,7 @@ Presentation habits
 ---
 title: opinions
 # opinions
-![disclaimer](disclaimer.png)
-
+![disclaimer](resources/disclaimer.png)
 ???
 #4
 I'm lifting this slide straight out of @imsick's deck (I'm too lazy to say the whole thing). I'm hoping he won't mind
@@ -43,26 +42,26 @@ of one of my slides [look, gaffe], make up a lot of historical sounding stuff
 ---
 title: genesis
 section: claim
-![genesis](adam-god.png)
+![genesis](resources/adam-god.png)
 ???
 #5
 Let's go back. All the way back.
 ---
 title: word
-![word](word.png)
+![word](resources/word.png)
 ???
 #6
 We start in the middle, with me thinking about words. As I do.
 ---
 title: books
-![gaimans-library](gaimans-library.png)
+![gaimans-library](resources/gaimans-library.png)
 ???
 #7
 Because I'm a book nerd from back when there was no internet
 (it's true kids, there was such a dark moment in our history).
 ---
 title: text-editing
-![codehands](codehands.mpg)
+![codehands](resources/codehands.mpg)
 ???
 #7.5
 The text editing that I perform (for work and play) to make ethereally
@@ -137,37 +136,33 @@ Our story begins with Ug.
 title: ug-lee
 ???
 #13 ug lee and the history of vocalisation
-Or rather, with Ug Lee. She's developed this
-strange habit of grunting every morning in a
-certain way at the uni-browed model of neanderthal
-masculinity currently sharing her animal skins.
-He's not the brightest, but he starts to get the
-idea that this means "Get up and go and hunt us
-some breakfast!". And so he does.
-And that's how language was invented.
-By a woman. Obviously. *duck*
+Or rather, with Ug Lee. She's developed this strange habit of grunting every
+morning in a certain way at the uni-browed model of neanderthal masculinity
+currently sharing her animal skins. He's not the brightest, but he starts to
+get the idea that this means "Get up and go and hunt us some breakfast!".
+And so he does. And that's how language was invented.
+By a woman.
+Obviously. *duck*
 ---
 title: primate
 ![primate-tool](resources/primate_tool.png)
 ???
 #14 primates
-But that just makes us shitty monkeys. Our hairier
-cousins even make tools.
+BJut that just makes us shitty monkeys. Even our hairier cousins make tools.
 ---
-
+title: non-verbal
+![ylvis-fox](resources/ylvis_fox.mpg)
 ???
 #15 what does the fox say?
-There are many examples of successful non-verbal
-communication, and while perfectly suited to living
-in harmony with the ecosystem, they don't have the
+There are many examples of successful non-verbal communication, and while
+perfectly suited to living in harmony with the ecosystem, they don't have the
 world-eating scale that the written word has enabled.
 ---
 title: oral
 ???
 #16 oral tradition
-I'm not knocking the grand oral tradition, it does
-have durability, but it's not redundant enough
-for my tastes.
+I'm not knocking the grand oral tradition, it does have durability, but it's
+not redundant enough for my tastes.
 ---
 title: pompeii
 ![pompeii](resources/pompeii.png)
@@ -184,9 +179,8 @@ title: ideogram
 title: ideograms
 ![hieroglyphics](resources/hieroglyphics.png)
 ![kanji](resources/kanji.png)
-and [] (eastern) symbols*.
-But I was bon in the South, not the east, so the
-part _I_ care about is....
+and eastern symbols*.
+But I was born in the South, not the East, so the part _I_ care about is....
 ---
 title: letter
 ![letter](resources/letter.png)
@@ -224,13 +218,19 @@ the acquisition of electronic devices
 section: now
 title: dyac
 ![dyac](resources/dyac.png)
-???
-#25.1 dyac
----
-title: memes
 ![memes](resources/memes.png)
 ???
-#25.2 memes
+#25.1 dyac
+I'm sure some of these disturbing images are familiar to most of you, and what's
+apparent to me, is that we're moving towards a post-word way of communicating
+with each other. Another disturbing trend is....
+---
+title: teenagers
+![teenagers](resources/teenagers.png)
+???
+#25.2
+Teenagers.
+---
 ---
 title: emoji
 ![emoji](resources/emoji.png)
