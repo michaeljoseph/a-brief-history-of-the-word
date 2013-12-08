@@ -31,14 +31,16 @@ title: opinions
 ![disclaimer](resources/disclaimer.png)
 ???
 #4
-I'm lifting this slide straight out of @imsick's deck (I'm too lazy to say the whole thing). I'm hoping he won't mind
-because his slide is probably much prettier than mine. He prides himself on
-his beautiful slides, the little darling. Bless.
+I'm lifting this slide straight out of @imsick's deck (I'm too lazy to say the whole thing).
+I'm hoping he won't mind because his slide decks is probably much prettier than mine.
+He prides himself on his beautiful slides, the little darling. Bless.
 
 (the lost art of the opinion in today's like culture (like-fatigue)) 
 
-This talk is opinionated, I make a few bold claims, I think that's even the title
-of one of my slides [look, gaffe], make up a lot of historical sounding stuff
+So, this talk is opinionated:
+I make a few bold claims, I think that's even the title of one of my slides
+(*look)
+[I make up a lot of historically dubiously sounding stuff]
 ---
 title: genesis
 section: claim
@@ -84,15 +86,23 @@ It then occurred to me- words may be the smallest useful unit of communication
 that we've invented. Many people live by reading, writing, editing, reviewing,
 publishing, printing, advertising and interacting with words.
 
-My bold claim (gaffe, you had one job) is that the word is our first tool. A seemingly inconsequential descendant of the far more important inventions of language and ideas you say? Well, to be precise(r), there were two related things: the invention of the letter and being able to write things down.
-My claim is that there is a direct evolutionary link between the invention of the word, and the internet.
+My bold claim (gaffe, you had one job) is that the word is our first tool.
+A seemingly inconsequential descendant of the far more important inventions of
+language and ideas you say? Well, to be precise(r), there were two related
+things:
+- the invention of the letter and
+- being able to write things down
+My claim is that there is a direct evolutionary link between the invention of
+the word, and the internet.
 ---
 title: text-editing
 layout: tweet
 
 ???
 #9
-And, as people who build, maintain, benefit and profit from that wonderous invention- you know that it's words all the way down. And until very recently, very wordy at the eyeball interface level too.
+And, as people who build, maintain, benefit and profit from that wonderous
+invention- you know that it's words all the way down. And until very recently,
+very wordy at the eyeball interface level too.
 ---
 title: monochrome
 type: media
@@ -114,7 +124,8 @@ title: outline
 * then
 ???
 #11
-To support my claim, we'll do a brief jaunt through history. A brief history of the word, as it were <falsetto>call back!</falsetto>
+To support my claim, we'll do a brief jaunt through history.
+A brief history of the word, as it were <falsetto>call back!</falsetto>
 
 I'll attempt to trace the history of the word, from pre- and non-verbal
 communication, through language, ideograms, letters, words, writing and writing
@@ -223,56 +234,80 @@ title: dyac
 #25.1 dyac
 I'm sure some of these disturbing images are familiar to most of you, and what's
 apparent to me, is that we're moving towards a post-word way of communicating
-with each other. Another disturbing trend is....
+with each other.
+Another disturbing trend is....
 ---
 title: teenagers
 ![teenagers](resources/teenagers.png)
+![under-the-table](resources/under_the_table.png)
+![phones-in-bowl](resources/phones_in_bowl.png)
 ???
 #25.2
-Teenagers.
----
+Teenagers. With phones and devices.
+Well, ok, not just teenagers.
 ---
 title: emoji
 ![emoji](resources/emoji.png)
-???
-#25.3 emoji
----
-title: emoji-dick
 ![emoji-dick](resources/emoji_dick.png)
 ???
-#25.4 emoji dick
+#25.3 emoji
+But, they're ones that send each other the most things.
+Like all the time.
 ---
 title: txtspk
-![txtspk](resources/txtspk.png)
+![txtspk1](resources/txtspk1.png)
+![txtspk2](resources/txtspk2.png)
+![txtspk3](resources/txtspk3.png)
 ???
 #26.1 txtspk
+IMing and FBing and tweeting and texting, these horrendous contractions and
+mis-shappen word amputees to each other.
 ---
 title: status
 ![status](resources/status.png)
 ???
 #26.2 status updates
+Living their lives out in the open, on the internet.
+---
+title: upload-stats
+![stats](resources/image_upload_stats.png)
+???
+Oversharing all their thoughts and moments.
 ---
 title: ideogram
 ![ideogram](resources/ideogram.png)
 ???
 #27 define ideogram
+And seemingly, taking us back to ideograms.
 ---
 title: internet-words
 ![words](resources/words.mp4)
 ???
 #28 top100 sites / word, av count
+You don't have to take my word for it, let's consult our good friend SCIENCE!
+
+
+
 ---
 title: recap
+# the evolution of communication
 ???
 #29 recap
+You literally can't argue with evolution. I may not necessarily like everything
+about where the communication means is headed (yes, I am an old timey, greybeard
+who still thinks that words have meanings and that it's hard enough to 
+communicate with another human at the best of times, and my children don't really
+get my taste in music. But I digress. Again)
+But, it is what it is.
 ---
 section: then
-title: signularity
+title: singularity
 ![black_hole](resources/black_hole.png)
 ???
 #30.1 black hole
+
 ---
-title: black-hole-sun
+title: define-signularity
 ![black_hole_sun](resources/black_hole_sun.png)
 ???
 #30.2 " sun
