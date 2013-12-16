@@ -35,7 +35,7 @@ I'm lifting this slide straight out of @imsick's deck (I'm too lazy to say the w
 I'm hoping he won't mind because his slide decks is probably much prettier than mine.
 He prides himself on his beautiful slides, the little darling. Bless.
 
-(the lost art of the opinion in today's like culture (like-fatigue)) 
+(the lost art of the opinion in today's like culture (like-fatigue))
 
 So, this talk is opinionated:
 I make a few bold claims, I think that's even the title of one of my slides
@@ -67,7 +67,7 @@ title: text-editing
 ???
 #7.5
 The text editing that I perform (for work and play) to make ethereally
-ephemeral computers do my bidding, is in essence, no different from that of a 
+ephemeral computers do my bidding, is in essence, no different from that of a
 journalist. Or a technical writer, novelist, playwright or screenplay writer
 (save in domain, workflow, history, politics and FUD).
 
@@ -135,7 +135,7 @@ I examine the current state of the art (this is the internet part) and fret abou
 the apparent decline in the usage of words.
 
 Finally, I attempt to extrapolate existing trends to provide a speculative view
-of a machine-aided future. And attempt to develop a methodology to detect and 
+of a machine-aided future. And attempt to develop a methodology to detect and
 prepare for the coming of our robot overloads (think Zombie Apocalypse Handbook).
 ---
 section: before
@@ -261,7 +261,7 @@ title: txtspk
 ???
 #26.1 txtspk
 IMing and FBing and tweeting and texting, these horrendous contractions and
-mis-shappen word amputees to each other.
+mis-shapen word amputees to each other.
 ---
 title: status
 ![status](resources/status.png)
@@ -283,11 +283,39 @@ And seemingly, taking us back to ideograms.
 title: internet-words
 ![words](resources/words.mp4)
 ???
-#28 top100 sites / word, av count
+#28.1 top100 sites / word, av count
 You don't have to take my word for it, let's consult our good friend SCIENCE!
+Here's me, writing a small* program to scrape the top 100 sites
+on the internet (excluding the walled gardens of Facebook and the like)
 
+that counts the number of occurrences of words and multimedia instances
+Let's say that a picture really _is_ worth a thousand words, and
+that a video is a thousand of those.
 
+I'm sorry it's taking so long, I'm usually a quicker typist than this.
+It may be the pressure of <airquotes>live coding</airquotes>, they
+say you should never do that.
+(# ztype?)
 
+Also, my OCD prevents me from writing even the most trvial of programs
+without doing it The Right Way (tm). So yes, this script has a github
+repository, travisci continuous integration (wait, is that like saying
+PIN number?), a read the flipping docs site, (a gh.io project page),
+unit tests, code coverage and [coveralls](http://coveralls.io)
+But of course, you don't have to watch me do all that, it's not you,
+it's me. Let's speed things up a bit.
+---
+title: internet-words-fast
+![words-fast](resources/words-fast.mp4)
+???
+#28.2
+And, the winner is....
+---
+title: internet-words-results
+![words-results](resources/words-results.png)
+???
+#28.3
+...
 ---
 title: recap
 # the evolution of communication
@@ -295,7 +323,7 @@ title: recap
 #29 recap
 You literally can't argue with evolution. I may not necessarily like everything
 about where the communication means is headed (yes, I am an old timey, greybeard
-who still thinks that words have meanings and that it's hard enough to 
+who still thinks that words have meanings and that it's hard enough to
 communicate with another human at the best of times, and my children don't really
 get my taste in music. But I digress. Again)
 But, it is what it is.
@@ -303,11 +331,11 @@ But, it is what it is.
 section: then
 title: singularity
 ![black_hole](resources/black_hole.png)
+![singularity](resources/singularity.png)
 ???
 #30.1 black hole
-
 ---
-title: define-signularity
+title: define-singularity
 ![black_hole_sun](resources/black_hole_sun.png)
 ???
 #30.2 " sun
@@ -354,7 +382,7 @@ title: glass
 ---
 title: fos
 ???
-#34.4 fos 
+#34.4 fos
 ---
 title: planet-eating
 ![earth-bite](resources/earth_apple_bite.jpg.png)
@@ -385,7 +413,7 @@ title: games
 title: brainwaves
 ![brainwaves](resources/tan_le_brainwaves.mp4)
 ???
-#37.2 tan_le 
+#37.2 tan_le
 ---
 title: prediction
 

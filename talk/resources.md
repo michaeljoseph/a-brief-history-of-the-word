@@ -5,7 +5,7 @@
 #3 profile pic
 #4 disclaimer
 #5 genesis
-#6 wordle (sic?) frequency cloud of something novel 
+#6 wordle (sic?) frequency cloud of something novel
 #7 gaiman's library
 #7.5 20-30s of fingers with PHP thrashing
 #8 TREAM
@@ -35,6 +35,7 @@
 #28 top100 sites / word, av count.mp4
 #29 (recap)
 #30.1 black_hole.png
+define singularity
 #30.2 " sun.png
 #31.1 ray.png
 #31.2 kurweil_invents.png
