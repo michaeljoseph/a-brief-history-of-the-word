@@ -5,9 +5,9 @@ install:
     - pip install -r requirements.txt --use-mirrors
 script:
     - mkdir -p remark
-    - remarkable --noinput remark talk/a-brief-history-of-the-word.md remark
+    - remarkable --noinput remark talk/presentation.md remark
     - mv remark.html remark/index.html
     - mkdir -p reveal
-    - remarkable --noinput reveal talk/a-brief-history-of-the-word.md reveal
+    - remarkable --noinput reveal talk/presentation.md reveal
 after_success:
   - rm -rf remark
