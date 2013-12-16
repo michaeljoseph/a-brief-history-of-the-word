@@ -146,7 +146,7 @@ Our story begins with Ug.
 ---
 title: ug-lee
 ???
-#13 ug lee and the history of vocalisation
+#13 Ug Lee and the history of vocalisation
 Or rather, with Ug Lee. She's developed this strange habit of grunting every
 morning in a certain way at the uni-browed model of neanderthal masculinity
 currently sharing her animal skins. He's not the brightest, but he starts to
@@ -159,7 +159,7 @@ title: primate
 ![primate-tool](resources/primate_tool.png)
 ???
 #14 primates
-BJut that just makes us shitty monkeys. Even our hairier cousins make tools.
+But that just makes us shitty monkeys. Even our hairier cousins make tools.
 ---
 title: non-verbal
 ![ylvis-fox](resources/ylvis_fox.mpg)
@@ -333,12 +333,11 @@ title: singularity
 ![black_hole](resources/black_hole.png)
 ![singularity](resources/singularity.png)
 ???
-#30.1 black hole
----
-title: define-singularity
-![black_hole_sun](resources/black_hole_sun.png)
-???
-#30.2 " sun
+#30 technological singularity
+
+>>>
+
+
 ---
 title: kurzweil
 ![kurzweil](resources/kurzweil.png)

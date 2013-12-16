@@ -43,10 +43,14 @@
 #29 recap
 
 [THEN]
-#30.1 black hole: define technological singularity
+#30 define technological singularity
 #31.1 ray
 #31.2 inventions
 #32 moore's law
+
+
+
+???
 #33.1 nanotechnology
 #33.2 glass
 #33.3 http://www.kickstarter.com/projects/erogear/fos-a-truly-wearable-bluetooth-led-display-system
@@ -59,6 +63,8 @@
 #37.1 obvious way to interact with a sentience, difficult and messy
 #37.2 ray@google "to bring natural language understanding to Google" (Datacenter*)
 #37.3 GOOG buys 7 robotics companies
+
+
 #38 post-singularity, AI design
 #39 movies and motivation: terminator, matrix, the culture
 #40 meta programming
@@ -66,8 +72,9 @@
 #41.2 datacenter farms
 #41.3 ecology
 #42 no going back
+
 #43 recap
 #44.1 word=tool (lever, pole vault)
 #44.2 singularity
 #45 AMA
-#46 credits, links
+#46 credits, links, references

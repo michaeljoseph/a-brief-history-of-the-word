@@ -1,4 +1,4 @@
-
+#31.3 nlp concepts?
 
 
 #38 post-singularity, AI design

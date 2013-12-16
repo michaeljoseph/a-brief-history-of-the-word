@@ -34,9 +34,8 @@
 #27 (define ideogram)
 #28 top100 sites / word, av count.mp4
 #29 (recap)
-#30.1 black_hole.png
-define singularity
-#30.2 " sun.png
+#30 black_hole.png
+    define_singularity.png
 #31.1 ray.png
 #31.2 kurweil_invents.png
 #31.3 ("to bring natural language understanding to Google")
