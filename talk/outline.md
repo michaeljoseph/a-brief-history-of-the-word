@@ -44,12 +44,33 @@
 
 [THEN]
 #30 define technological singularity
-#31.1 ray
+#31.1 ray kurzweil
 #31.2 inventions
 #32 moore's law
-
-
-
+#32.5 moravec
+#33 accelerating returns
+#34 longbets.org/1; time to human brain emulation: 2029
+#35 criticism- mitch kapor, bill joy
+#36 dystopia
+#37 motivation
+#38 movies: terminator, matrix
+#39 consciousness
+#40 clarke, culture, dataecology
+(# stellar pitch)
+(# human)
+#41 no going back
+#42 recap
+#42.1 word=tool (lever, pole vault)
+#42.2 singularity
+#43 ama
+#44 credits, links, references
+???
+#34.1 metcalfe
+#34.2 minipedia
+#35 xkcd_internet_map.png
+#37.1 obvious way to interact with a sentience, difficult and messy
+#37.2 ray@google "to bring natural language understanding to Google" (Datacenter*)
+#37.3 GOOG buys 7 robotics companies
 ???
 #33.1 nanotechnology
 #33.2 glass
@@ -57,24 +78,3 @@
 #33.4 3D printing
 #33.5 kinect / wii
 #33.6 http://www.ted.com/talks/tan_le_a_headset_that_reads_your_brainwaves.html
-#34.1 metcalfe
-#34.2 minipedia
-#35 xkcd_internet_map.png
-#37.1 obvious way to interact with a sentience, difficult and messy
-#37.2 ray@google "to bring natural language understanding to Google" (Datacenter*)
-#37.3 GOOG buys 7 robotics companies
-
-
-#38 post-singularity, AI design
-#39 movies and motivation: terminator, matrix, the culture
-#40 meta programming
-#41.1 planet eating tech
-#41.2 datacenter farms
-#41.3 ecology
-#42 no going back
-
-#43 recap
-#44.1 word=tool (lever, pole vault)
-#44.2 singularity
-#45 AMA
-#46 credits, links, references

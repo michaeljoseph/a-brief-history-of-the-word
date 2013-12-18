@@ -335,9 +335,6 @@ title: singularity
 ???
 #30 technological singularity
 
->>>
-
-
 ---
 title: kurzweil
 ![kurzweil](resources/kurzweil.png)
