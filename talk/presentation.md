@@ -334,6 +334,8 @@ title: singularity
 ![singularity](resources/singularity.png)
 ???
 #30 technological singularity
+The question is:
+Are You Prepared For The Coming Of The Glorious Technological Singularity?
 
 ---
 title: kurzweil

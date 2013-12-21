@@ -1,3 +1,24 @@
+#30
+Are you prepared for the coming of the glorious technological singularity?
+(# eidolon tlp)
+
+The singularity, to quote one of it's most famous proponents, Raymond Kurzweil,
+is:
+""
+... a future period during which the pace of technological change will be so rapid,
+its impact so deep, that human life will be irreversibly transformed
+"
+von Neumann coined it in 1950:
+"In the 1950s John von Neumann, the legendary information theorist, was quoted as saying that "the ever-accelerating
+progress of technology ... gives the appearance of approaching some essential singularity in the history of the race
+beyond which human affairs, as we know them, could not continue."3 Von Neumann makes two important
+observations here: acceleration and singularity."
+
+
+
+
+
+
 # kurzweil
 probably standing on the shoulders of hans moravec
 1988, Mind Children
@@ -110,4 +131,12 @@ http://www.wired.com/business/2013/04/kurzweil-google-ai/
 
 
 
+# plant intelligence
+- internet = root network, distributed redundancy (90% tolerance)
+- how do plants use humans
+- relative consciousness per timescale
+  - graph relative lifetime lengths (relative to average human)
+
+"Awhy they are so similar?"
+- kottke, plant science 
 
