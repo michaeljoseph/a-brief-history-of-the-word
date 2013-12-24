@@ -302,9 +302,30 @@ You _know_ he has his own data farm.
 Larry and Sergey were like "Zhure Ray, whatever you want Ray"
 Wow. That was awful. Sorry.
 
+Ray seems to dodge the question, but I think he thinks the question is irrelevant.
+He's a scientist. This is what the data tells us. The trend is clear, modellable
+and accurate.
 
-----
-# dystopia
+The question of ethics, souls, what it means to be alive or conscious, these are
+not the realm of the scientist. You can't measure or model or hypothesize or
+experiment on the subject experience. (# qualia) are by definition subjection.
+
+
+(# Markram) says the same thing, let's just follow the science. And science
+there is. Markram's (# human brain project) has just gotten 1bn euros from the EU
+to model and simulate the brain. With a combination of wet lab work (essentially
+analysing rat brain slices) and large scale computer models of the network.
+The team has lofty goals: <>
+
+Of course these considerations of consciousness matter. Our self consciousness
+of our consciousness. We should have answers for these questions, but this is
+not the domain of our scientists. 
+They just see the sound and smoke of the approaching / oncoming train.
+(# the sound of inevitability)
+
+
+
+(#36 dystopia)
 Do you think that Ray or (# Andrew Ng) or (# Jeff Dean) or whoever is
 about to press the enter key in 2029 to initiate the boot sequence of
 the grand pappy of all super humanly intelligent consciousness, will pause
@@ -314,41 +335,52 @@ will he briefly consider if this was such a good idea after all, and if Larry
 had remembered to test the undo function like I asked him to. Oh, my coffee mug
 is empty, did I remember to refill the coffee machine after the last re-up?
 Do I smell burning? What's that sound? (# OMG) the coffee machine is alive!
-(# terminator) and I'm going to die of 3rd degree coffee burns now, how very sad
+(# terminator) and I'm going to die of 3rd degree coffee burns now, how very
+sad.
 
+#37 motivation
 
+Post / pre- singularity social upheaval (the religous right, protests, FUD)
 
-#31.3 natural language
-"to bring natural language understanding to Google"
-#32 xkcd_internet_map.png
-![xkcd-internet-map](resources/xkcd_internet_map.png)
-#33 minipedia
-#34.1 moore's law
-#34.2 nanotechnology
-#34.3 glass
-#34.4 fos
-#35.1 planet eating tech
-![earth-bite](resources/earth_apple_bite.jpg.png)
-#35.2 datacenter farms
-![datacenter](resources/datacenter.png)
-#35.3 ecology
-![ecology](resources/ecology.png)
-#36 3D printing
-![3d-printing](resources/3d.mp4)
-#37.1 kinect / wii
-![wii](resources/wii.mp4)
-![kinect](resources/kinect.mp4)
-#37.2 tan_le
-eeg, experiments
-![brainwaves](resources/tan_le_brainwaves.mp4)
-#38 prediction
-#39.1 word=tool
-![word-tool](resources/word_tool.png)
-#39.2 lever, pole vault
-![pole-vault](resources/pole_vault.png)
-#39.3 cyborgs
-![cyborg](resources/cyborg.png)
-#40
-![ama-slideshow](ama-slideshow.gif)
-#41
-credits, links, resources, bibliography
+The machines may naturally posit that humans are an unnecessary drain on the
+dwindling resources of our planet. The rich shall lose their utility first, as
+the leverage of their finances decreases as the machines take over the production
+of all requirements.  Producers are rewarded. And a concerted, consolidated,
+co-ordinated worldwide action can easily fix humanities ills in the space of a
+generation. Religion is naturally deselected in a generation.
+
+If the planet is in fact screwed beyond repair, then the machines will take to
+the stars, with us in tow (# we'll follow you to mars) (there will presumably
+still be some tasks that human's excel at). Or else we'll become pets?
+The quantum possibility waveform will collapse into a steady, sustainable
+ecosystem (the machines need this planet too) and homo sapiens fades into the
+archaeological record as they (# beam us aboard their beautiful ship Subterran 
+Homesick Alien) and our carbon fades into silicon. (# transhumanism)
+
+or maybe they'll love us? (# kurzweil dialogue excerpt; summation)
+
+#38 movies: terminator, matrix
+#39 consciousness
+#40 clarke, culture, dataecology
+(# stellar pitch)
+(# human)
+#41 no going back
+#42 recap
+#42.1 word=tool (lever, pole vault)
+#42.2 singularity
+#43 ama
+#44 credits, links, references
+???
+#34.1 metcalfe
+#34.2 minipedia
+#35 xkcd_internet_map.png
+#37.1 obvious way to interact with a sentience, difficult and messy
+#37.2 ray@google "to bring natural language understanding to Google" (Datacenter*)
+#37.3 GOOG buys 7 robotics companies
+???
+#33.1 nanotechnology
+#33.2 glass
+#33.3 http://www.kickstarter.com/projects/erogear/fos-a-truly-wearable-bluetooth-led-display-system
+#33.4 3D printing
+#33.5 kinect / wii
+#33.6 http://www.ted.com/talks/tan_le_a_headset_that_reads_your_brainwaves.html
