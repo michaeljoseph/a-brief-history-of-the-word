@@ -40,6 +40,7 @@
 #28.1 top100 sites / word, av count
 #28.2 faster
 #28.3 results
+#28.4 clive thompson: most writing ever
 #29 recap
 
 [THEN]
@@ -52,6 +53,7 @@
 #34 longbets.org/1; time to human brain emulation: 2029
 #35 criticism- mitch kapor, bill joy
 #36 dystopia
+
 #37 motivation
 #38 movies: terminator, matrix
 #39 consciousness

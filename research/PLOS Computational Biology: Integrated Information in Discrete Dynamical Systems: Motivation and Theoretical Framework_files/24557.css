@@ -1,0 +1,10 @@
+
+@font-face {
+    font-family: 'FS Albert Web Regular';
+    src: url('http://f.fontdeck.com/f/1/OTA0VVNIYlUAAFXvs7Rp8Tm1uaOMGb5Ib/Bc1CIGHgjPrureJo+/rc0OhH8sQa+UImM.eot');
+    src: url('http://f.fontdeck.com/f/1/OTA0VVNIYlUAAFXvs7Rp8Tm1uaOMGb5Ib/Bc1CIGHgjPrureJo+/rc0OhH8sQa+UImM.eot?') format('embedded-opentype'),
+    url('http://f.fontdeck.com/f/1/OTA0VVNIYlUAAFXvs7Rp8Tm1uaOMGb5Ib/Bc1CIGHgjPrureJo+/rc0OhH8sQa+UImM.woff') format('woff'),
+    url('http://f.fontdeck.com/f/1/OTA0VVNIYlUAAFXvs7Rp8Tm1uaOMGb5Ib/Bc1CIGHgjPrureJo+/rc0OhH8sQa+UImM.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}

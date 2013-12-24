@@ -1,0 +1,1 @@
+twttr.receiveCount({"count":366,"url":"http:\/\/www.kurzweilai.net\/the-law-of-accelerating-returns\/"});
