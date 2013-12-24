@@ -1,0 +1,54 @@
+@import url("hw-local-sidebars.css");
+
+ /*overrides for design2.5 - replace navy with your dark color and blue with your light color */
+
+#header .header-buttons, #header .header-buttons a {color: #9c9;}
+
+#header #hdr-login {color: #9c9;}
+
+#header .bar, #footer .bar {background-color: #9c9;}	
+
+#content-block .toc-level a.toc-section-return {background-color:#9c9;}
+
+#header .bar-inner, #footer .footer-group {background-color: #9c9;}
+
+
+ /*logo settings - adjust for size and filename/format  */
+#header h1 a#logo {background-image: url('/local/img/journal_logo.gif');width:470px;height:80px;}
+#header h1  {height:80px;width:470px;margin:0 24px;}
+
+#content-block .table-caption p  {font-style:italic;}
+#content-block .table-caption p span.genus-species{font-style:normal;}
+
+span.genus-species, .named-content, .cit-etal {font-style: italic;}
+
+#pageid-content #content-block {font-family: "Georgia", "Times New Roman", serif;}
+
+.cit-auth, .cit-pub-date {font-weight: bold;}
+#pageid-content div.ref-cit .cit-vol {font-weight: normal;}
+
+.table-expansion .table-char {text-align: center;}
+.table-expansion .table-vbottom {vertical-align: bottom;}
+#pageid-content .table-expansion .xref-bibr {vertical-align: baseline; font-size: 1.0em;}
+
+#pageid-content .article div.section h3 {display: block; margin-bottom: 0.5em; font-size: 1.2em; font-style: normal;}
+#pageid-content .article div.section h4 {display: block; font-size: 1.0em; font-style: normal;}
+
+/* text above author affilation, change comma size in super-scipted section */
+.xref-sep {font-size: x-small;}
+
+/*
+.table .table-caption p.first-child {font-style: italic;}
+*/
+
+#header .banner-ads {top: 3px;}
+
+#pageid-toc #content-block .cit-list .cit-views li.free, #pageid-toc #content-block .cit-list .cit-views li.free-to-you{
+color: red;
+float: left;
+font-weight: bold;
+text-transform: uppercase;
+}
+#pageid-content #col-2 div.cb-contents div.cb-views li span.free {
+color: red;
+}

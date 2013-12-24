@@ -5,7 +5,7 @@
 #3 profile pic
 #4 disclaimer
 #5 genesis
-#6 wordle (sic?) frequency cloud of something novel 
+#6 wordle (sic?) frequency cloud of something novel
 #7 gaiman's library
 #7.5 20-30s of fingers with PHP thrashing
 #8 TREAM
@@ -34,8 +34,8 @@
 #27 (define ideogram)
 #28 top100 sites / word, av count.mp4
 #29 (recap)
-#30.1 black_hole.png
-#30.2 " sun.png
+#30 black_hole.png
+    define_singularity.png
 #31.1 ray.png
 #31.2 kurweil_invents.png
 #31.3 ("to bring natural language understanding to Google")
@@ -45,7 +45,7 @@
 #34.2 nano.png
 #34.3 glass.png / mp4 (parody)
 #34.4 fos.mp4
-#35.1 earth_apple_bite.png
+#35.1 earth_apple_bite.jpg
 #35.2 datacenters.png
 #35.3 ecology.png
 #36 3d_printing.mp4

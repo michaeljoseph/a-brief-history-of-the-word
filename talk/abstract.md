@@ -7,8 +7,8 @@ Audience: people of the Internet and others
 This talk will trace the evolutionary path of our society (just the good bits),
 starting with communication, through language and the invention of the word.
 
-I shall posit the hypothesis that the invention of the word was the first tool
-that allowed us to scale our communities into world eating monstrosities.
+I shall posit that the invention of a simple tool, the word, enabled us to scale
+our communities into world eating monstrosities.
 
 Also, I'll talk about the internet and what I think is going to happen next.
 

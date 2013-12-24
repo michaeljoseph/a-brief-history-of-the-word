@@ -33,36 +33,50 @@
 #25.1 dyac
 #25.2 memes
 #25.3 emoji
-#25.4 " dick
+#25.4 emoji dick
 #26.1 txtspk
 #26.2 status updates
 #27 define ideogram
-#28 top100 sites / word, av count
+#28.1 top100 sites / word, av count
+#28.2 faster
+#28.3 results
+#28.4 clive thompson: most writing ever
 #29 recap
 
 [THEN]
-#30.1 black hole
-#30.2 " sun
-#31.1 ray
+#30 define technological singularity
+#31.1 ray kurzweil
 #31.2 inventions
-#31.3 "to bring natural language understanding to Google"
-#32 xkcd_internet_map.png
-#33 minipedia
-#34.1 moore's law
-#34.2 nanotechnology
-#34.3 glass
-#34.4 http://www.kickstarter.com/projects/erogear/fos-a-truly-wearable-bluetooth-led-display-system
-#35.1 planet eating tech
-#35.2 datacenter farms
-#35.3 ecology
-#36 3D printing
-#37.1 kinect / wii
-#37.2 http://www.ted.com/talks/tan_le_a_headset_that_reads_your_brainwaves.html
-#38 weak prediction
-#39.1 word=tool
-#39.2 lever, pole vault
-#39.3 cyborgs
-#40 AMA
-#41 credits, links
+#32 moore's law
+#32.5 moravec
+#33 accelerating returns
+#34 longbets.org/1; time to human brain emulation: 2029
+#35 criticism- mitch kapor, bill joy
+#36 dystopia
 
-[FIN]
+#37 motivation
+#38 movies: terminator, matrix
+#39 consciousness
+#40 clarke, culture, dataecology
+(# stellar pitch)
+(# human)
+#41 no going back
+#42 recap
+#42.1 word=tool (lever, pole vault)
+#42.2 singularity
+#43 ama
+#44 credits, links, references
+???
+#34.1 metcalfe
+#34.2 minipedia
+#35 xkcd_internet_map.png
+#37.1 obvious way to interact with a sentience, difficult and messy
+#37.2 ray@google "to bring natural language understanding to Google" (Datacenter*)
+#37.3 GOOG buys 7 robotics companies
+???
+#33.1 nanotechnology
+#33.2 glass
+#33.3 http://www.kickstarter.com/projects/erogear/fos-a-truly-wearable-bluetooth-led-display-system
+#33.4 3D printing
+#33.5 kinect / wii
+#33.6 http://www.ted.com/talks/tan_le_a_headset_that_reads_your_brainwaves.html

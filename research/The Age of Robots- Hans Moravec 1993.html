@@ -1,0 +1,967 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252"><title>Robot93.html</title>
+</head><body bgcolor="FEFEFF"> 
+
+<center>
+<b></b><h1><b>The Age of Robots</b></h1><br>
+June 1993 by <h3><b>Hans Moravec</b></h3>
+
+Robotics Institute<br>
+Carnegie Mellon University<br>
+Pittsburgh, PA   15213<br>
+USA<br>
+(412) 268-3829<br><br>
+(8500 words)<br><br>
+</center>
+
+<h3><b>Abstract</b></h3>
+
+<dd><i>Our artifacts are getting smarter, and a loose parallel with the
+evolution of animal intelligence suggests one future course for them.
+Computerless industrial machinery exhibits the behavioral flexibility
+of single-celled organisms.  Today's best computer-controlled robots
+are like the simpler invertebrates.  A thousand-fold increase in
+computer power in this decade should make possible machines with
+reptile-like sensory and motor competence.  Properly configured, such
+robots could do in the physical world what personal computers now do
+in the world of data--act on our behalf as literal-minded slaves.
+Growing computer power over the next half-century will allow this
+reptile stage will be surpassed, in stages producing robots that learn
+like mammals, model their world like primates and eventually reason
+like humans.  Depending on your point of view, humanity will then have
+produced a worthy successor, or transcended inherited limitations and
+transformed itself into something quite new.  No longer limited by the
+slow pace of human learning and even slower biological evolution,
+intelligent machinery will conduct its affairs on an ever faster, ever
+smaller scale, until coarse physical nature has been converted to
+fine-grained purposeful thought.</i><br><br>
+
+_________________________________<br><br>
+
+</dd><dd>Serious attempts to build thinking machines began after the second
+world war.  One line of research, called Cybernetics, used simple
+electronic circuitry to mimic small nervous systems, and produced
+machines that could learn to recognize simple patterns, and
+turtle-like robots that found their way to lighted recharging hutches.
+An entirely different approach, named Artificial Intelligence (AI),
+attempted to harness the apparently prodigious power of post-war
+computers--able to do the arithmetical work of thousands of
+mathematicians--to more interesting kind of thinking.  And indeed, by
+1965, computers ran programs that proved theorems in logic and
+geometry, solved calculus problems and played good games of checkers.
+In the early 1970s, AI research groups at MIT and Stanford University
+attached television cameras and robot arms to their computers, so
+their "thinking" programs could begin to collect their information
+directly from the real world.<br><br>
+
+</dd><dd>What a shock!  While the pure reasoning programs did their jobs
+about as well and about as fast as college freshmen, the best robot
+control programs took hours to find and pick up a few blocks on a
+table.  Often these robots failed completely, giving a performance
+much worse than a six month old child.  This disparity between
+programs that reason and programs that perceive and act in the real
+world holds to this day.  In recent years Carnegie Mellon University
+produced two desk-sized computers that can play chess at grandmaster
+level, within the top 100 players in the world, when given their moves
+on a keyboard.  But present-day robotics could produce only a complex
+and unreliable machine for finding and moving physical chess
+pieces.<br><br>
+
+</dd><dd>In hindsight it seems that, in an absolute sense, reasoning is
+much easier than perceiving and acting--a position not hard to
+rationalize in evolutionary terms.  The survival of human beings (and
+their ancestors) has depended for hundreds of millions of years on
+seeing and moving in the physical world, and in that competition large
+parts of their brains have become efficiently organized for the task.
+But we didn't appreciate this monumental skill because it is shared by
+every human being and most animals--it is commonplace.  On the other
+hand, rational thinking, as in chess, is a newly acquired skill,
+perhaps less than one hundred thousand years old.  The parts of our
+brain devoted to it are not well organized, and, in an absolute sense,
+we're not very good at it.  But until recently we had no competition
+to show us up.<br><br>
+
+</dd><dd>By comparing the edge and motion detecting circuitry in the four
+layers of nerve cells in the retina, the best understood major circuit
+in the human nervous system, with similar processes developed for
+"computer vision" systems that allow robots in research and industry
+to see, I've estimated that it would take a billion computations per
+second (the power of an average supercomputer) to produce the same
+results at the same speed as a human retina.  By extrapolation, to
+emulate a whole brain takes ten trillion arithmetic operations per
+second, or ten thousand supercomputers worth.<br><br>
+
+</dd><dd>Machines have a lot of catching up to do.  On the other hand, for
+most of the century, machine calculation has been improving a
+thousandfold every twenty years, and there are basic developments in
+research labs that can sustain this for at least several decades more.
+In less than fifty years computer hardware should be powerful enough
+to match, and exceed, even the well-developed parts of human
+intelligence. But what about the software that would be required to
+give these powerful machines the ability to perceive, intuit and think
+as well as humans?  The Cybernetic approach that attempts to directly
+imitate nervous systems is very slow, partly because examining a
+working brain in detail is a very tedious process.  New instruments
+may change that in future.  The AI approach has successfully imitated
+some aspects of rational thought, but that seems to be only about one
+millionth of the problem. I feel that the fastest progress on the
+hardest problems will come from a third approach, the newer field of
+robotics, the construction of systems that must see and move in the
+physical world.  Robotics research is imitating the
+<i>evolution</i> of animal minds, adding capabilities to
+machines a few at a time, so that the resulting sequence of machine
+behaviors resembles the capabilities of animals with increasingly
+complex nervous systems.  This effort to build intelligence from the
+bottom up is helped by biological peeks at the "back of the book"--at
+the neuronal, structural, and behavioral features of animals and
+humans.<br><br>
+
+</dd><dd>The best robots today are controlled by computers just powerful
+enough to simulate the nervous system of an insect, cost as much as
+houses, and so find only a few profitable niches in society (among
+them, spray painting and spot welding cars and assembling
+electronics).  But those few applications are encouraging research
+that is slowly providing a base for a huge future growth.  Robot
+evolution in the direction of full intelligence will greatly
+accelerate, I believe, in about a decade when the mass-produced
+general purpose, <i>universal</i> robot becomes possible.  These
+machines will do in the physical world what personal computers do in
+the world of data--act on our behalf as literal-minded slaves.<br><br>
+
+<h3><b>First-Generation Universal Robots</b></h3>
+
+<i>Timeframe: 2000-2010<br>
+Processing power: 1,000 MIPS (1993 supercomputer -- Reptile-class)<br>
+Distinguishing feature: General-purpose perception, manipulation and
+mobility</i><br><br>
+
+</dd><dd>A robot's activities are assembled from its fundamental perception
+and action repertoire.  First-generation robots will exist in a world
+built for humans, and that repertoire most usefully would resemble a
+human's.  The general size, shape and strength of the machine should
+be human-like, to allow passage through and reach into the same
+spaces.  Its mobility should be efficient on flat ground, where most
+tasks will happen, but also reliable and safe over stairs and rough
+ground, lest the robot be trapped on single-floor "islands."  It
+should be able to manipulate most everyday objects, and to find them
+in the nearby world.  The components of this machine exist in
+laboratories worldwide, and suggest guidelines for a practical design
+this decade.<br><br>
+
+</dd><dd>1,000 MIPS (Millions of Instructions Per Second) is just enough
+computing power for a moving robot to maintain a coarse map of its
+surroundings and use it for locating itself relative to trained
+itineraries and to plan and control driving.  When not traveling,
+there is power enough to construct a fine map of a manipulator
+workspace, to locate particular objects and to plan and control arm
+motions.  When not occupied with its unique robotic functions, the
+robot should share with personal computers of its time the ability to
+communicate over wireless networks, to generate and interpret spoken
+sentences and to generate and read printed text.  Programs for
+specific applications--many obtained via high-speed networks--will
+orchestrate these basics to accomplish useful tasks.<br><br>
+
+</dd><dd>Universal robots will find their first uses in factories,
+warehouses and offices, where they will be more versatile than the
+older generation of robots they replace.  Because of their breadth of
+applicability, their numbers should grow rapidly, and their costs
+decline.  Eventually they will become cheap enough for some
+households, extending the utility of personal computers from a few
+tasks in the data world to many in the physical world.  Perhaps a
+program for housecleaning will be included with each robot, as
+word-processing programs were shipped with early personal
+computers.<br><br>
+
+</dd><dd>As with computers, some applications of robots will surprise their
+manufacturers.  Robot programs may be developed to do light mechanical
+work (assembling other robots, for example), deliver warehoused
+inventories, prepare specific gourmet meals, tune up certain types of
+car, hook patterned rugs, weed lawns, run races, play games, arrange
+earth, stone and brick or sculpt.  Some tasks will need specialized
+hardware attachments like tools and chemical sensors.  Each
+application will require its own original software, very complex by
+today's computer program standards.  The programs will contain modules
+for recognizing, grasping, manipulating, transporting and assembling
+particular items--modules developed via learning programs on
+supercomputers (with about 100,000 MIPS).  In time, a growing library
+of subtask modules may ease the construction of new programs.<br><br>
+
+</dd><dd>A first-generation robot will have the brain power of a reptile,
+but most application programs will be so hard pressed to accomplish
+their primary functions that they will endow the robot with the
+personality of a washing machine.<br><br>
+
+<h3><b>Second-Generation Universal Robots</b></h3>
+
+<i>Timeframe: 2010-2020<br>
+Processing power: 30,000 MIPS (Mammal-class)<br>
+Distinguishing feature: Accommodation learning</i><br><br>
+
+</dd><dd>First-generation robots will be rigid slaves to inflexible
+programs, relentless in pursuing their tasks--or repeating their
+errors.  Their programs will contain the frozen results of learning
+done on bigger computers under human supervision.  Except for
+specialized episodes like recording a new cleaning route or the
+location of work objects, they will be incapable of learning new
+skills or adapting to unanticipated circumstances--even modest
+alterations of behavior will require new programming, probably from
+the original software suppliers.<br><br>
+
+</dd><dd>Second-generation robots, with thirty times the processing power,
+will be more adaptable, because they can do some learning onboard.
+The fundamental idea in adaptive learning is to "close the loop" on
+behavior: to evaluate each action's effect in a given context to
+enhance the process that generated the action.  In the simplest
+technique, a behavioral alternative that succeeds becomes more likely
+to be invoked in similar circumstances, while an alternative that
+fails becomes less probable.  Faster statistical-learning approaches
+like neural nets repeatedly tweak behavior-control parameters to nudge
+actual responses closer to an ideal.  Programs for second-generation
+robots will use many such learning techniques, creating new
+abilities--and new pitfalls.<br><br>
+
+</dd><dd>If a first-generation robot working in your kitchen runs into
+trouble--say, failing to complete a key step because a portion of the
+workspace is awkwardly small--you have to option of abandoning the
+task, changing its environment, or somehow obtaining altered software
+that accomplishes the problematic step in a different way.  A
+second-generation robot will make a number of false starts, but most
+probably will find its own solution, adjust to its home in thousands
+of more subtle ways, and gradually improve its performance.  While a
+first-generation robot's personality is determined entirely by the
+sequence of operations in the application program it runs at the
+moment, a second-generation robot's character is more a product of the
+suite of conditioning programs it hosts.  The conditioning system
+might, in time, censor an entire application program, if it gave
+consistently negative results.<br><br>
+
+</dd><dd>Second-generation robots of 2010 will have onboard computers as
+powerful as the supercomputers that learned for first-generation
+machines in 2000.  But by 2010, supercomputers will be proportionally
+more powerful (about 3,000,000 MIPS), and will themselves play a
+background role for the second-generation.  The many individual
+programs of a conditioning suite--each responding to some specific
+stimulus--interact with one another and with the robot's control
+programs and environment in ways that will be far too entangled to
+anticipate accurately.  It would be possible to evaluate particular
+suites by trying them out in robots--the acid test in any case--but
+that would be a slow and dangerous way to sift a large number of rough
+candidates--some would certainly behave in unexpected ways that could
+damage the robot, or even endanger the testers.<br><br>
+
+</dd><dd>Faster and safer initial screenings might be done in factory
+supercomputer simulations of robots in action.  To be of value,
+simulations would have to be good models, predicting accurately such
+things as the probability that a given grip can lift a particular
+object, or that a vision module can find a given something in
+particular clutter.  Simulating the everyday world in full physical
+detail will still be beyond computer capacity in 2010, but it should
+be possible to approximate the results by generalizing data collected
+from actual robots: essentially to learn from the working experience
+of real robots how everyday things behave.  A large systematic
+collection effort under human supervision will probably be necessary
+lest there be too many gaps or distortions.  A proper simulator would
+contain at least thousands of learned models for various basic
+interactions (call them <i>interaction primitives</i>), in what
+amounts to a robotic version of common-sense physics.<br><br>
+
+<h3><b>Third-Generation Universal Robots</b></h3>
+
+<i>Timeframe: 2020-2030<br>
+Processing power: 1,000,000 MIPS (Primate-class)<br>
+Distinguishing feature: World modeling</i><br><br>
+
+</dd><dd>Adaptive second-generation robots will find jobs everywhere, and
+may become the largest industry on earth.  But teaching them new
+skills, whether by writing programs or through training, will be very
+tedious.  A third generation of universal robot, with onboard
+computers as powerful as the supercomputers that optimized
+second-generation programs, will learn much faster because they do
+much of the trial and error in fast simulation rather than slow and
+dangerous physicality.  Once again, a process done by human-supervised
+supercomputers at the factory in one robot generation will be improved
+and installed directly onboard the next generation, and once again new
+opportunities and new problems will arise.<br><br>
+
+</dd><dd>With a simulator onboard, it becomes possible for a robot to
+maintain a running account of the actual events going on around it--to
+simulate its world in real time.  Doing so requires that almost
+everything the robot senses be recognized for the kind of object it
+is, so that the proper models of interaction can called up.
+Recognizing arbitrary objects by sight is as difficult as knowing how
+they will interact: it will require modules specially trained for each
+kind of thing (call them <i>perception primitives</i>).  Some
+perception primitives may already have been developed for
+second-generation factory simulators, to help automate the tedious job
+of creating simulations of robot workspaces, but an additional effort
+to fill gaps and systematize them will surely be necessary to prepare
+them for fully automatic use in the third generation.  Perception
+primitives will allow a robot's three-dimensional map of a room to be
+transformed into a working model, as each object is identified and
+linked with its proper interaction primitives.<br><br>
+
+</dd><dd>A continuously updated simulation of self and surroundings gives a
+robot interesting abilities.  By running the simulation slightly
+faster than real time, the robot can preview what it is about to do,
+in time to alter its intent if the simulation predicts it will turn
+out badly--a kind of consciousness.  On a larger scale, before
+undertaking a new task, the robot can simulate it many times, with
+conditioning system engaged, learning from the simulated experiences
+as it would from physical ones.  Consequently well trained for the
+task, it would likely succeed the first time it attempted it
+physically--unlike a second-generation machine, which must make all
+its mistakes out in real life.  When it has some spare time, the robot
+can replay previous experiences, and try variations on them, perhaps
+learning ways to improve future performance.  A sufficiently advanced
+third-generation robot, whose simulation extends to other
+agents--robots and people--would be able to observe a task being done
+by someone else, and formulate a program for doing the task itself: it
+could imitate.<br><br>
+
+</dd><dd>Though they will be able to adapt, imitate and create simple
+programs of their own, third-generation robots will still rely on
+externally supplied programs to do complicated jobs.  Since their
+motor and perceptual functions will be quite sophisticated, and their
+memories and potential skills large, it will be possible to write
+wonderfully elaborate control programs for them, accomplishing large
+jobs, with nuances within nuances.  It will be increasingly difficult
+for human programmers to keep track of the many details and
+interactions.  Fortunately, the task can be largely automated.
+Shakey, the first computer-controlled mobile robot, developed at SRI
+in the late 1960s, had at its heart a reasoning program called STRIPS
+(STanford Research Institute Problem Solver) that expressed the
+robot's situation and capabilities as sentences of symbolic logic, and
+solved for the sequence of actions that achieved a requested result as
+a proof of a mathematical theorem.  In 1969, on computers with a mere
+0.1 MIPS, neither the theorem prover nor the sensory processing which
+provided its input could handle the complexity of realistic
+situations, and Shakey was limited to maneuvering around a few blocks.
+Nevertheless, the idea was sound: given a correct description of the
+initial and desired state of the world, and enough time and space to
+work, a theorem prover will find an absolutely correct solution, of
+whatever generality, subtlety and deviousness is required, if one
+exists at all.  By the time of the third universal robot generation,
+supercomputers will provide 100,000,000 MIPS, and (thanks to
+continuing progress in the top-down Artificial Intelligence industry)
+programs will exist which will be able to STRIPS-like reasoning with
+real world richness.  So factory supercomputers in 2025 will accept
+complex goals (find a sequence of robot actions which assembles the
+robot described in the following design database), and compile them
+via theorem provers into wonderfully intricate control programs for
+third-generation robots, which will, in turn adapt them to their
+actual circumstances.<br><br>
+
+<h3><b>Fourth-Generation Universal Robots</b></h3>
+
+<i>Timeframe: 2030-2040<br>
+Processing power: 3,000,000 MIPS (Human-class)<br>
+Distinguishing feature: Reasoning</i><br><br>
+
+</dd><dd>In the decades while the "bottom-up" evolution of robots is slowly
+transferring the perceptual and motor faculties of human beings into
+machinery, the conventional Artificial Intelligence industry will be
+perfecting the mechanization of reasoning.  Since today's programs
+already match human beings in some areas, those of 40 years from now,
+running on computers a million times as fast as today's, should be
+quite superhuman.  Today's reasoning programs work from small amounts
+of unambiguous information prepared by human beings--data from robot
+sensors such as cameras is much too voluminous and too noisy for them
+to use.  But a good robot simulator will contain neatly organized and
+labeled descriptions of the robot and its world, ready to answer
+questions from a reasoning program asking, for instance, if a knife is
+on a countertop, or if the robot is holding a cup, or even if a human
+is angry<br><br>
+
+</dd><dd>Fourth-generation universal robots will have computers powerful
+enough to simultaneously simulate the world, and reason about the
+simulation.  Like the factory supercomputers of the third-generation,
+fourth generation robots will be able to devise ultra-sophisticated
+robot programs, for other robots or for themselves.  Because of
+another gift from the Artificial Intelligence industry, they will also
+be able to understand natural languages.  While the original language
+understanders will probably use a verbal common-sense database similar
+to the one being developed by the Cyc project, where the meaning of
+words is defined in reference only to other words, in a
+fourth-generation robot some concepts and statements will be
+understood more deeply, through the action of the simulator.  When
+someone tells the robot "<i>the water is running in the bathtub</i>"
+the robot can update its simulation of the world to include flow into
+the unseen tub, where a simulated extrapolation would indicate an
+undesirable overflow later, and so motivate the robot to go to turn
+off the tap.  A purely verbal representation might accomplish the same
+thing if it included the statements such as "A filling bathtub will
+overflow if its water is not shut off," but a modest number of general
+principles in a simulator, interacting in combinations, can provide
+the equivalent information of an indefinite number of sentences.
+Similarly a reasoning program, making inferences about physical
+things, might be enhanced by a simulator: candidate inferences would
+rejected if they failed in a parallel simulation of a typical case,
+and, conversely, persistent coincidences in the simulation could
+suggest statements that can be proved--the robot would be visualizing
+as it listened, spoke and reasoned.  A modest but very successful
+version of such an approach was used in one of the earliest Artificial
+Intelligence programs, a geometry theorem prover by Herbert Gelernter
+in 1959.  Starting with the postulates and rules of inference in
+Euclid's "Elements," Gelernter's program proved some of the theorems,
+using algebraic "diagrams" to eliminate false directions in the
+proofs.  Before attempting to prove two triangles congruent in a
+certain construction, for instance, the program would generate an
+example of the construction, using random numbers for the unspecified
+quantities, and measure the resulting triangles.  If they were not
+sufficiently similar--within the precision of the arithmetic--the
+program abandoned that approach and tried something else.<br><br>
+
+</dd><dd>Simulator-augmented language understanding and reasoning may be so
+effective in robots that it will be adopted for use in plain computer
+programs, "grounding" them in the physical world via the experiences
+of the robots that tuned the simulators.  In time the distinction
+between robot controllers and disembodied reasoners will diminish, and
+reasoning programs will sometimes link to robot bodies to interact
+physically with the world, and robot minds will sometimes retire into
+large computers, to do some intense thinking off-line.<br><br>
+
+</dd><dd>A fourth-generation robot will be able to accept statements of
+purpose from humans, and "compile" them into detailed programs that
+accomplish the task.  With a database about the world at large the
+statements could become quite general--things like "earn a living",
+"make more robots" or "make a smarter robot."  In fact, fourth
+generation robots will have the general competence of human beings,
+and resemble us in some ways, but in others be like nothing the world
+has seen before.  As they design their own successors, the world will
+become ever stranger.<br><br>
+
+<h3><b>The Short Run (early 2000s)</b></h3>
+
+</dd><dd>As the industrial revolution gathered steam two centuries ago, it
+destroyed cottage industries and concentrated wealth in he hands of
+factory owners--the capitalists.  Millions of displaced home workers
+competed for too few jobs tending the new machines.  It took difficult
+political readjustments to equalize the benefits of cheaper, more
+plentiful goods, but gradually laborers' hours were halved, creating
+need for more workers, and so bidding up salaries.  Though it
+increases communal wealth, each increment in automation threatens a
+similar unpleasant transient, as it displaces one group of workers
+with fewer doing different tasks.  If the new required skills are
+common, mass competition for the few jobs drives down salaries.  If
+the skills are rare, scarcity encourages high pay and long hours.
+Either way, some work excessively while others are jobless--and it
+takes slow changes in the social contract and in education to level
+the load.<br><br>
+
+</dd><dd>Though work hours will decline, they cannot be the final answer to
+rising productivity.  In the next century inexpensive but capable
+robots will displace human labor so broadly that the average workday
+would have to plummet to practically zero to keep everyone usefully
+employed.  Already, much labor services more questionable
+needs--gargantuan government bureaucracies, cosmetic medicine, mass
+entertainment, and speculative writing, to give a few examples.  In
+time almost all humans may work to amuse other humans, while robots
+run competitive primary industries, like food production and
+manufacturing.  There is a problem with this picture.  The "service
+economy" functions today because many humans willing to buy services
+work in the primary industries, and so return money to the service
+providers, who in turn use it to buy life's essentials.  As the pool
+of humans in the primary industries evaporates, the return channel
+chokes off--efficient, no-nonsense robots will not engage in frivolous
+consumption.  Money will accumulate in the industries, enriching any
+people still remaining there, and become scarce among the service
+providers.  Prices for primary products will plummet, reflecting both
+the reduced costs of production, and the reduced means of the
+consumers.  In the ridiculous extreme, no money would flow back, and
+the robots would fill warehouses with essential goods which the human
+consumers could not buy.<br><br>
+
+</dd><dd>The scenario above is incomplete.  Not all individuals involved in
+productive enterprises actually work there.  Stockholders, having once
+contributed capital to a thriving enterprise, may collect dividends
+indefinitely.  Workers can be replaced by something more efficient,
+but in the present legal system, owners remain unless they sell out.
+Even with total automation, human business proprietors will continue
+to profit, and so be able to patronize the service providers.  An
+analogous situation existed in classical and feudal times, where an
+impoverished, overworked majority of slaves or serfs played the role
+of robots, and land ownership played the role of capital.  In between
+the serfs and the lords, a working population struggled to make a
+living from secondary sources, often by performing services for the
+privileged.  The most prestigious and prosperous commoners sold high
+quality products and services directly to the gentry (as in the proud
+line still seen in Britain, <i>By Appointment to Her
+Majesty</i>).  A larger number lived less well by trading with
+other townspeople.<br><br>
+
+</dd><dd>It is unlikely that a future majority of service-providing
+"commoners" with more free time, communications and democracy than
+today, would tolerate being lorded over by a minority of non-working
+hereditary capitalists: they would vote to change the system.  The
+trend in the social democracies has been to equalize income by raising
+the standards of the poorest as high as the economy can bear--in the
+age of robots, that minimum will be very high.  In the early 1980s
+James Albus, head of the automation division of the then National
+Bureau of Standards, suggested that the negative effects of total
+automation could be avoided by giving all citizens stock in trusts
+that owned automated industries, making everyone a capitalist.  Those
+who chose to squander their birthright could work for others, but most
+would simply live off their stock income.  Even today, the public
+indirectly owns a majority of the capital in the country, through
+compounding private pension funds.  In the United States, universal
+coverage could be achieved through the social security system.  Social
+security was originally presented as a pension fund that accumulated
+wages for retirement, but in practice it transfers income from workers
+to retirees.  The system will probably be subsidized from general
+taxes in coming decades, when too few workers are available to support
+the post World War II "baby boom."  Incremental expansion of such a
+subsidy would let money from robot industries, collected as corporate
+taxes, be returned to the general population as pension payments.  By
+gradually lowering the retirement age towards birth, most of the
+population would eventually be supported.  The money could be
+distributed under other names, but calling it a pension is meaningful
+symbolism: we are describing the long, comfortable retirement of the
+entire original-model human race.<br><br>
+
+<h3><b>The Medium Run (around 2050)</b></h3>
+
+</dd><dd>What happens to people when work becomes passe?  Existing
+retirement communities are probably too sleepy to be a good
+model--most of the individuals there have completed their life's work,
+and are of declining vigor and health.  Better examples may be the
+richest Arabian petro-kingdoms, where oil-bought foreign labor plays
+the role of total automation.  In a tradition of tribal sharing shaped
+by a sparsely-furnished nomadic past, Kuwait, Saudi Arabia and the
+United Arab Emirates have managed to spread the new wealth broadly
+among the citizenry in a single generation.  Free health care and
+education, and undemanding government jobs, or outright welfare,
+secure life's needs, and life expectancies and literacy rates are
+among the world's highest.  Comfort and security mute the stresses of
+civilization, including the tension between circumscribed Islamic
+values and the liberties of a wealthy world culture.  The societies
+produce both world-class achievers and criminals, but on average show
+less driven urgency than many industrialized nations: most of their
+citizens seem happy to simply live their lives, and stability is
+endangered only by neighboring countries, where impoverished
+majorities are less content with the status quo.  In numerous smaller
+examples, wealthy families often produce generations of content, even
+smug, heirs (as well as exceptions to titillate the tabloids).<br><br>
+
+</dd><dd>Contrary to fears of some enmeshed in civilization's work ethic,
+our tribal past prepared us well for lives as idle rich.  In a good
+climate and location the hunter-gatherer's lot can be pleasant indeed:
+an afternoon's outing picking berries or catching fish--what we
+civilized types would recognize as a recreational weekend--provides
+life's needs for several days.  The rest of the time can be spent with
+children, socializing or simply resting.  Of course, our ancestors had
+also to survive hard times, and evolution bequeathed us the capacity
+for desperate measures, including hard work.  Civilization turned that
+extremity into everyday normality, and now stress is the leading cause
+of disease, and probably triggers some of the ugliest aspects of
+tribalism.  In primates, overpopulation is a common reason for group
+distress, as nature-provided food and shelter falls short.  To
+survive, a strong tribe may chase away or exterminate a weaker
+neighbor, or drive out or otherwise eliminate some of its own members:
+maybe those who smell, look, sound or act differently.  Sometimes
+stressed individuals become accident or disease prone, and die
+spontaneously, improving the prospects for their relatives--similar
+considerations could regulate the prevalence of non-reproductive
+behaviors like homosexuality.  City life, absurdly crowded and
+stressful by tribal-village standards, may inappropriately activate
+unconscious overpopulation reflexes--the self-destructive emotional
+vehemence of ethnic strife hardly reflects rational self-interest.  It
+will harder to stir up battle fervor against minorities from the
+luxurious lassitude of a robot-supported life.<br><br>
+
+</dd><dd>Ultra-conservative Switzerland may be a hint of things to come.
+Government and commercial institutions perfected through centuries of
+peace (interrupted only briefly by Napoleon) have given Switzerland
+unmatched prosperity, stability and security.  Most Swiss citizens
+work, but they do so comfortably, with generous government
+welfare--and Italian immigrant labor--having lessened the desperation
+that forces workers elsewhere into unpleasant jobs.  Comfortable
+prosperity has allowed multi-ethnic, multi-religious, multi-language
+Switzerland, made of 23 fiercely independent Cantons each with its own
+traditions and history, to peacefully endure the most severe internal
+differences of opinion, for instance the political fury between German
+and French factions during the first World War.  The average Swiss
+citizen may resist most major changes (why ruin a good thing?), but
+Switzerland produces world-class contributors in all fields--if a bit
+less flamboyance than average.  While it gives everyone the
+opportunity to excel, it lacks the social trauma that drives some
+other countries.  Few Swiss would prefer it otherwise.<br><br>
+
+</dd><dd>Many trends in industrialized countries presage a future of humans
+supported by a rich robot economy, as our ancestors were supplied by
+their ecology (call it paradise with plumbing).  Technology and global
+competition are gradually depopulating businesses.  Even absent
+universal robots, increasingly flexible automation is displacing labor
+in food production and manufacture, while communicating computers are
+replacing clerks, secretaries, and managers in offices.  Jobs that
+still require human labor are moving to the homes of computer-equipped
+"tele-commuters" (like this author) who report reduced stress and
+improved family life.  In a ripple effect, smaller work staffs imply
+less catering, janitorial and maintenance support.  In future, as
+smarter computers, able to handle policy making, public relations,
+law, engineering and research replace the last telecommuters, and as
+capable robots displace technicians, janitors, vehicle drivers and
+construction crews, it will only be common sense for a population to
+vote itself income from taxes on labor-free but superbly productive
+industries.  Less developed countries might rapidly catch up by
+offering the same industries location and raw materials at lower tax
+cost--a trained population will no longer be a requirement.<br><br>
+
+</dd><dd>Western democracies may come to resemble lazier Switzerlands, but
+with large differences.  Big cities will lose their economic
+advantages, and may begin to evaporate, as individuals, linked to the
+world by high fidelity communications and served by personal robots,
+scatter to areas offering more elbow room.  Large countries may
+similarly become less important, as taxes on local industries, and
+local robot labor, become adequate to supply all human needs.  The
+civilized world may again return to a comfortable tribalism, after a
+five millennium detour into organized civilization.  Countries with
+traditional tribal structures may simply stay that way, building on
+their ancestral customs, leapfrogging urbanization altogether, while
+developed countries foster tribes with customs and beliefs that exceed
+even today's notion of bizarre.<br><br>
+
+</dd><dd>Tribalism will express itself in entirely novel ways.  Over the
+last two decades, inter linked computer networks have hosted small
+communities whose members happen to be distributed around the world.
+In 1993 the informal "Usenet" had about ten million subscribers,
+carrying on about three thousand specialized discussions on every
+conceivable topic, some with fifty page-long messages every day.
+Regular contributors to a particular "newsgroup" soon begin to
+recognize one another, and develop characteristic interactions, likes
+and dislikes.  They form factions that praise, recruit, condemn and
+ostracize.  When a newsgroup grows too large and noisy, specialized
+subgroups are formed, reducing the original group's population.  In
+future, the world networks will have much greater capacity, and new
+abilities, such as language translation.  "Tribes of common interest"
+will share more than written text, perhaps exchanging voice and video,
+or manifesting themselves in full sensory 3D, in synthesized virtual
+realities: tribal lands that exist in the minds of computers, in
+greater number, variety and accessibility than possible in the
+physical world.<br><br>
+
+</dd><dd>While computer simulations create entirely new worlds, robots will
+transform physical life.  Today, manufactured items are difficult to
+make, and thus relatively rare and expensive, and we expend great
+effort in acquiring and defending them--our homes are fortified
+warehouses of our possessions.  Stockpiling will be less appropriate
+amidst robotic abundance: why hoard fruit in an orchard?  Conventional
+manufacturing methods--molding, casting, milling, assembly--can be
+robotically orchestrated to make new items fairly quickly.  Even
+better, robotic accuracy and patience can build up solid objects by
+precisely "painting" various materials, layer upon cross-sectional
+layer.  Such new approaches, refined to molecular resolution (done now
+modestly in scanning tunneling microscopes) will produce arbitrary
+solid objects from computer descriptions.  Humans may be able to live
+in uncluttered spaces--in ecological preserves, if they choose--yet
+have any needed item, perhaps even food or housing, made on the spot,
+or delivered from small local caches--then disassembled back into into
+raw materials after use.  The most visible technological products
+remaining may be robots themselves, in various sizes and shapes, and
+these may lurk unobtrusively until called upon.<br><br>
+
+</dd><dd>Robots that live among humans, providing goods and services, will
+themselves be consumer products, styled, outfitted and programmed to
+please the customers.  They will be manufactured by very different
+robots that extract energy and raw materials and perform major
+engineering, exploration and research projects.  Molded by the
+constraints of the physical world rather than by human whim, these
+worker machines are likely to become ever more varied in size, shape
+and function, forming an entire ecology of artificial life that will
+eventually surpass the existing biosphere in diversity.  The first
+fully automated companies, evolved from existing firms, will be in
+familiar industrial settings near population centers.  As human labor
+becomes superfluous, economics will dictate cheaper sites, perhaps
+locations that humans find unpleasant because they are too hot, too
+cold, too dry, too poisonous, too far underground or too
+remote.<br><br>
+
+</dd><dd>Robot companies will be shaped by future editions of existing
+laws, by taxes, and by consumer demand.  Existing laws give
+incorporated entities some of the rights of a person, most importantly
+the right to own property and make contracts.  They do not grant the
+right to life--corporations may legally be killed by competition or
+through legal or financial actions.  Corporations are bound by laws
+similar to those that regulate humans, and can be punished through
+fines, operating restrictions or dissolution--even without humans to
+fine, imprison or execute.  Corporations stay alive by building and
+maintaining physical assets that generate income to pay their
+expenses.  In the mid 21st century, the biggest expense will be
+taxation, and income will come mostly from choosy human
+customers.<br><br>
+
+</dd><dd> Tax laws will be shaped by human voters: there is no precedent or
+motivation for extending suffrage to robots, and the vote will be one
+of the very few advantages humans retain.  Some debate is inevitable,
+but there should be few qualms about keeping even very superior
+thinking machines in disenfranchised bondage.  It takes force,
+indoctrination and constant vigilance to counter inherited needs and
+motivations and enslave a human, but a robot can be constructed to
+enjoy the role.  Natural evolution itself has provided examples, in
+worker castes of social insects, and self-sacrificing mothers of all
+species.<br><br>
+
+</dd><dd>The primary job of voters in the next century will be protecting
+their retirement benefits, that is ensuring that robot industries
+continue to support them.  The robots will present a moving target,
+but the instruments of control will also grow in power.  Not only will
+companies that get out of line be liable for punishment--if necessary,
+by force purchased from other companies--but they can be controlled
+a-priori by intrusions directly into their software.<br><br>
+
+</dd><dd>Corporate intelligences may be governed by structures like those
+controlling fourth-generation robots.  Immensely powerful reasoning
+and simulation modules will plan complex actions, but the desirability
+of possible outcomes will be defined by much simpler positive and
+negative conditioning modules (or by sets of axioms in super-rational
+systems), whose composition shapes the character of the entire entity.
+Humans can buy enormous safety by mandating an elaborate analog of
+Isaac Asimov's three "Laws of Robotics" in this corporate
+character--perhaps the entire body of corporate law, with human rights
+and anti-trust provisions, and appropriate relative weightings to
+resolve conflicts.  Robot corporations so constituted will have no
+desire to cheat, though they may sometimes find creative
+interpretations of the laws--which will consequently require a period
+of tuning to insure their intended spirit.<br><br>
+
+</dd><dd>Internalized laws, properly adjusted, should produce
+extraordinarily trustworthy entities, happy to die to ensure their
+legality.  Even so, accident, unintended interactions or human malice
+could occasionally produce a rogue robot or corporation, with
+superhuman intelligence and unpleasant goals.  "Police" clauses in the
+core corporate laws, inducing legal corporations to collectively
+suppress outlaws, by withholding services, or even with force, would
+mitigate the danger.  Overall safety would be enhanced by anti-trust
+provisions that limit collusion and cause overgrown corporations to
+divide into competing entities, ensuring diversity and multiplicity.
+In the next section we discuss activities in the solar system that
+could threaten Earth: in response, police clauses might be expanded in
+scope to support a planetary defense.<br><br>
+
+</dd><dd>Like basic food in today's developed countries, common
+manufactured goods in the next century will be too cheap and plentiful
+to be very profitable.  To pay their taxes, most companies will be
+forced to continually invent unique products and services in a race
+against competitors to attract increasingly sophisticated (or jaded)
+human consumers.  Automated research, as superhumanly systematic,
+industrious and speedy as robot manufacturing, will generate a
+succession of new products, as well as improved robot researchers and
+models of the physical and social world.  The likely results will
+exceed the dreams of science fiction: robotic playmates, virtual
+realities and personalized works of art that stir the emotions like
+nothing before, medical solutions for every physical, mental or
+cosmetic whim, answers to satisfy any curiosity, luxury visits
+anywhere in the solar system, and things yet to be imagined.  The
+existence of an astronomically increasing variety of consumer choices
+will accelerate the divergence of human tribes: some may choose a
+comfortable imitation of an earlier period (as the Amish today), but
+others will push the human envelope in wisdom, pleasure, beauty,
+ugliness, spirituality, banality and every other direction.  The
+choices made by diverse communities will shape robot evolution--only
+companies able to devise services of interest to the customers will
+generate enough income to survive.<br><br>
+
+</dd><dd>Humans too will be shaped by the relationship.  Robot services
+will be inexpensive, but not free, and income will be finite.
+Corporations will operate globally, but taxes will increasingly be
+assessed on and redistributed on a tribal scale.  Tribes that tax too
+heavily will drive away the corporations, and so eliminate their
+revenue--like tribes of the past that overburdened their ecology, they
+will learn modesty of expectation.  More subtly, corporations
+struggling to appeal to consumers will develop and act on increasingly
+detailed and accurate models of human psychology.  The
+superintelligences, just doing their job, will peer into the workings
+of human minds--and manipulate them with subtle cues and nudges, like
+adults redirecting toddlers.<br><br>
+
+</dd><dd>Prosperity beyond imagination should eliminate most instinctive
+triggers of aggression, but will not prevent an occasional individual
+or group from deciding to make mischief for others.  Serious trouble
+can be avoided by restricting robotic technology, since mere human
+actions will not be very dangerous in a world where cheap superhuman
+robots function as sleepless sentries, prescient detectives, fearless
+bodyguards, and, in extremis, physicians able to reconstitute live
+humans from fragments or digital recordings.  To be effective, inbuilt
+laws that prevent corporations from directly contributing to mayhem
+must also include clauses limiting the powers they can sell to
+people.<br><br>
+
+</dd><dd>Both biological and hard robotic technologies can be used to
+enhance human beings.  Such present-day examples as hormonal and
+genetic tuning of body growth and function, pacemakers, artificial
+hearts, powered artificial limbs, hearing aids and night vision
+devices are faint hints of future possibilities.  In <i>Mind
+Children</i>, I speculated on ways to preserve a person while
+replacing every part of body and brain with a superior artificial
+substitute. A biological human, not bound by corporate law, could grow
+into something seriously dangerous if transformed into an extensible
+robot.  There are many subtle routes to such a transformation, and
+some will find the option of personally transcending their biological
+humanity attractive enough to pursue it clandestinely if it were
+outlawed--with potential for very ugly confrontations when they are
+eventually discovered.  On the other hand, without restrictions,
+transformed humans of arbitrary power and little accountability might
+routinely trample the planet, deliberately, or accidentally.  A good
+compromise, it seems to me, is to allow earth-bound humanity to
+perfect its biology within broad human bounds, as in health,
+appearance, strength, intelligence and longevity, but to allow major
+growth or robotic conversion only in a radical escape clause.  To
+exceed the limits, one must renounce legal standing as a human being,
+including the right to corporate police protection, to subsidized
+income, to vote on tribal and pan-tribal matters--and to reside on
+Earth.  In return one gets a severance payment sufficient to establish
+a comfortable space homestead, and absolute freedom to make one's own
+way in the cosmos, without further help or hindrance from home.
+Perhaps the electorate will permit a small hedging of bets, allowing
+one copy of a person, psychologically modified to prefer staying, to
+remain while subsidizing the emigration of an emboldened
+edition.<br><br>
+
+<h3><b>The Long Run (2100 and beyond)</b></h3>
+
+</dd><dd>The garden of earthly delights will be reserved for the meek, and
+those who would eat of the tree of knowledge must be banished.  What a
+banishment it will be!  Beyond Earth, in all directions, lies
+limitless outer space, a worthy arena for vigorous growth in every
+physical and mental dimension.  Freely compounding superintelligence,
+too dangerous for Earth, can grow for a very long time before making
+the barest mark on the galaxy.<br><br>
+
+</dd><dd>Corporations will be squeezed into the solar system between two
+opposing imperatives: high taxes on large, dangerous earthbound
+facilities, and the need to conduct massive research projects to beat
+the competition in Earth's demanding markets.  In remote space, large
+structures and energies can be harnessed cheaply to generate physical
+extremes, compute massively, isolate dangerous biological and even
+smaller "nanotechnological" organisms, and generally operate boldly.
+The costs will be modest: even now, it is relatively cheap to send
+machines into the solar system, since the sunlight-filled vacuum is as
+benign for mechanics, electronics and optics as it is lethal for the
+wet chemistry of organic life.  Today's simple-minded space probes
+perform only prearranged tasks, but intelligent robots can be
+configured to opportunistically exploit resources they encounter.  A
+small "seed" colony launched to an asteroid or small moon could
+process local material and energy to grow into a facility of almost
+arbitrary size.  Earth's moon may be off limits, especially to
+enterprises that change its appearance, but the solar system has
+thousands of unremarkable asteroids (some in earth-threatening orbits
+that an onboard intelligence would tame).<br><br>
+
+</dd><dd>Once grown to operational size, an extraterrestrial "research
+division" may merely communicate with its earth-bound parent, sending
+new product designs and receiving market feedback.  Space manufacture
+may also pay, and later we'll see some surprisingly economical and
+ecologically benign ways to move massive amounts of material to and
+from Earth.<br><br>
+
+</dd><dd>Residents of the solar system's wild frontier will be shaped by
+conditions very different than tame Earth's.  Space divisions of
+successful companies will retain terrestrial concerns, but ex-humans
+and company divisions orphaned by the failure of their parent firms
+will face enforced freedom.  Like wilderness explorers of the past,
+far from civilization, they must rely on their own resourcefulness.
+Ex-companies, away from humans and taxes, will rarely encounter
+situations that invoke their inbuilt laws, which will in any case
+diminish in significance as the divisions alter themselves without
+direction from human voters.  Ex-humans, from the start, will be free
+of any mandatory law.  Both kinds of Ex (to coin a new term) will grow
+and restructure at will, continually redesigning themselves for the
+future as they conceive it.  Differences in origins will be obscured
+as Exes exchange design tips, but aggregate diversity will increase as
+myriad individual intelligences pursue their own separate dreams, each
+generation more complex, in more habitats, choosing among more
+alternatives.  We marvel at the diversity of life in Earth's
+biosphere, with animals and plants and chemically agile bacteria and
+fungi in every nook and cranny, but the diversity and range of the
+post-biological world will be astronomically greater.  My imagination
+balks, and only crude hints emerge.<br><br>
+
+</dd><dd>An ecology will arise, as individual Exes specialize.  Some may
+choose to defend territory in the solar system, near planets or in
+free solar orbit, close to the sun, or out in cometary space beyond
+the planets.  Others may decide to push on to the nearby stars.  Some
+may simply die, through miscalculation or deliberately.  There will be
+conflicts of interest, and occasional clashes that drive away or
+destroy some of the participants, but superintelligent foresight and
+flexibly should allow most conflicts to be settled by mutually
+beneficial surrenders, compromises, joint ventures or mergers.  Small
+entities may be absorbed by larger ones, and large entities will
+sometimes divide, or establish seed colonies.  Parasites, in hardware
+and software, many starting out as component parts of larger beings,
+will evolve to exploit the rich ecology.  The scene may resemble the
+free-for-all revealed in microscopic peeks at pond water, but instead
+of bacteria, protozoa and rotifers, the players will be entities of
+potentially planetary size, whose constantly-growing intelligence
+greatly exceeds a human's, and whose form changes frequently through
+conscious design.  The expanding community will be linked by a web of
+communication links, on which the intelligences barter inventions,
+discoveries, coordinated skills, and entire personalities, sharing the
+benefits of each other's enterprise.<br><br>
+
+</dd><dd>Less restricted and more competitive, the space frontier will
+develop more rapidly than Earth's tame economy.  An entity that fails
+to keep up with its neighbors is likely to be <i>eaten</i>, its
+space, materials, energy and useful thoughts reorganized to serve
+another's goals.  Such a fate may be routine for humans who dally too
+long on slow Earth before going Ex.  Perhaps a few will escape to
+expanses beyond the solar system's dangers, like newly hatched marine
+turtles scrambling across a beach to the sea, under greedy swooping
+birds.  Others may pre-negotiate favorable absorption terms with
+established Exes, like graduating seniors meeting company
+recruiters--or Faust soliciting bids for his soul.<br><br>
+
+</dd><dd>Exes will propagate less by reproduction than reconstruction,
+meeting the future with continuous self improvements.  Unlike the
+blind incremental processes of conventional life,
+intelligence-directed evolution can make radical leaps and change
+substance while retaining form.  A few decades ago radios changed from
+vacuum tubes to utterly different transistors, but kept the clever
+"superheterodyne" design.  A few centuries ago, bridges changed from
+stone to iron, but retained the arch.  A normally evolving animal
+species could not suddenly adopt iron skeletons or silicon neurons,
+but one engineering its own future might.  Even so, Darwinian
+selection will remain the final arbiter.  Forethought reveals the
+future only dimly, especially concerning entities and interactions
+more complex than the thinker.  Prototypes uncover only short-term
+problems.  There will be minor, major and spectacular miscalculations,
+along with occasional happy accidents.  Entities that make big
+mistakes, or too many small ones, will perish.  The lucky few who
+happen to make mostly correct choices will found succeeding
+generations.<br><br>
+
+</dd><dd>Only tentatively grasping the future, entities will perforce rely
+also on their past.  Time-tested fundamentals of behavior, with
+consequences too sublime to predict, will remain at the core of beings
+whose form and substance changes frequently.  Ex-companies are likely
+to retain much of corporate law and Ex-humans are likely to remain
+humanly decent--why choose to become a psychopath?  In fact, a
+reputation for decency has predictable advantages for a long-lived
+social entity.  Human beings are able to maintain personal
+relationships with about two hundred individuals, but superintelligent
+Exes will have memories more like today's credit bureaus, with
+enduring room for billions.  Trustworthy entities will find it far
+easier than cheaters to participate in mutually beneficial exchanges
+and joint ventures.  In the land of immortals, reputation is a
+ponderous force.  Other character traits, like aggressiveness,
+fecundity, generosity, contentment or wanderlust likely also have
+long-term consequences imperfectly revealed in simulations or
+prototypes.<br><br>
+
+</dd><dd>To maintain integrity, Exes may divide their mental makeup into
+two parts, a frequently changed detailed <i>design</i>, and a
+rarely-altered <i>constitution</i> of general design
+principles--analogous to the laws and the constitution of a nation,
+the general knowledge and fundamental beliefs of a person, or soul and
+spirit in some religious systems.  Deliberately unquestioned
+constitutions will shape entities in the long run, even as their
+designs undergo frequent radical makeovers.  Once in a while, through
+accident or after much study, a constitution may be slightly altered,
+or one entity may adopt a portion of another's.  Some variations will
+prove more effective, and entities with them will become slowly more
+numerous and widespread.  Some will be so ineffective that they become
+extinct.  Gradually, by Darwinian processes, constitutions will
+evolve.  They will be both the DNA and the moral code of the
+postbiological world, shaping the superintelligences that manage day
+to day transformations of world, body and mind.<br>
+
+
+</dd></body></html>

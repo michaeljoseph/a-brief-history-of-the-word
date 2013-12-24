@@ -1,0 +1,587 @@
+<!DOCTYPE html
+     PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:og="http://ogp.me/ns#"
+      xmlns:fb="http://www.facebook.com/2008/fbml"  class='publishers' >
+<head>
+
+<link type='text/css' href='/static/css/articles/viewer_docs.css'  rel="stylesheet" />
+<link type='text/css' href='/static/jmvc/main_app/resources/js/jscrollbar/style/jquery.jscrollpane.css'  rel="stylesheet" />
+<script type="text/javascript" src="/static/jmvc/main_app/resources/js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="/static/jmvc/main_app/resources/js/jscrollbar/script/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="/static/jmvc/main_app/resources/js/jscrollbar/script/jquery.jscrollpane.min.js"></script>
+
+    <script type='text/javascript'>
+        $(document).ready(function () {
+            
+                var full_screen = false;
+            
+            var doc_height, doc_width;
+
+            var init_fulls = function () {
+                $("body").css("overflow", "hidden");
+                doc_width = $(window).width()
+                doc_height = parseInt($(window).height())-parseInt($('#viewer_header').height())
+                if(full_screen==true) {
+                    $('#fulls_context').css({'width': (doc_width-250)+"px",  'clear': 'none', 'height': (doc_height-2)+'px'})
+                    $('#fulls_list').css({'width':'250px', 'height': (doc_height-2)+'px'})
+                    $('#viewer_context').css({'width': (doc_width-250)+'px', 'height': (doc_height-2)+'px'})
+                } else {
+                    $('#fulls_context').css({'width': doc_width+"px",'border':'none',  'clear': 'none', 'height': (doc_height-2)+'px'})
+                    $('#viewer_context').css({'width': doc_width+'px', 'height': (doc_height-2)+'px'})
+                }
+            }
+
+            var w_hi = $(window).height()
+
+            if(w_hi>10) {
+                init_fulls(false)
+            } else {
+                var i = 0;
+                var load_all = setInterval(function () {
+                    var w_hi = $(window).height()
+                    if(w_hi>10) {
+                        clearInterval(load_all)
+                        init_fulls(false)
+                    }
+                    if(i>6) {
+                        clearInterval(load_all)
+                    }
+                    i++;
+                }, 1000)
+            }
+
+            var load_img_func = function (img_obj, elem_width, img_nr) {
+                var prev_size = 860;
+                if(elem_width<=1000) {
+                    prev_size = 860
+                } else {
+                    prev_size = 2000
+                }
+                //img_obj.attr('src', "http://images.figshare.com/resize/"+elem_width+"/457986/p_457986_01.png")
+                img_obj.attr('src', "http://previews.figshare.com/457986/"+prev_size+"/p_0"+img_nr+".png")
+            }
+
+            var load_doc = function () {
+                try {
+                    var p_height = document.body.parentElement.clientHeight
+                } catch (e) {
+                    var p_height = $(window).height()
+                }
+
+                var h_height = $('#viewer_header').height()
+                var b_height = $('#viewer_context').height()
+
+                var elem = $('#page_1 img')
+                var zoom_level = 0
+                var zoomz = [233, 350, 486, 600, 800, 1000, 1200, 1600, 2000]
+
+                var elem_height = 0
+                var cur_elem_height = 0
+                var def_pos = false
+                var pos = 1
+                var nb_height = p_height-h_height-1;
+                var user_id = 96550;
+                var file_id = 457986;
+                var last_page = 9;
+                var loaded_items = [1]
+
+                var page_heights = []
+                var page_offests = []
+
+
+                $('#viewer_context').css('height', nb_height+'px')
+
+                var cont_elem = $('#page_1 div')
+                var elem_width = cont_elem.width()
+
+                for(var i=0, len = zoomz.length; i<len; i++) {
+                    if(elem_width>=zoomz[i] && elem_width<=zoomz[i+1]) {
+                        zoom_level = i;
+                        var a = zoomz
+                        elem_width = zoomz[i];
+                        break
+                    }
+                }
+
+                $('#viewer_context div.imgs').css({'width': elem_width+'px'})
+                //$('img:first', cont_elem).attr('src', "http://docimg2.figshare.com/?url=http://previews.figshare.com/457986/p_457986_01.png&width="+elem_width)
+                
+                    load_img_func($('img:first', cont_elem), elem_width, 1)
+                
+
+                //http://images.figshare.com/resize/800/481854/p_481854_01.png
+                //$('img:first', cont_elem).attr('src', "http://images.figshare.com/?url=http://previews.figshare.com/457986/p_457986_01.png&width="+elem_width+"")
+                //cont_elem.html("<img src='/img/457986/1/w="+elem_width+"' />");
+
+
+                var api, api_left;
+
+                if ($.browser.msie  && parseInt($.browser.version, 10) === 8) {
+                    $('#viewer_context').jScrollPane({verticalDragMinHeight:35,showArrows: true, autoReinitialise: true});
+                    $('#fulls_list').jScrollPane({verticalDragMinHeight:35,showArrows: true, autoReinitialise: true});
+                    api = $('#viewer_context').data('jsp');
+                    api_left = $('#fulls_list').data('jsp');
+                }
+
+                //---------------------------------------------------------------------------
+                $('#page_1 img').load(function () {
+                    elem_height = $(this).height();
+                    cur_elem_height = elem_height
+                    //$('#viewer_context div.imgs div').css('height', elem_height+'px')
+                    elem_height += 60
+                    var offset = $(this).offset().top
+
+                    // panes were here
+                    $('#viewer_context').jScrollPane({verticalDragMinHeight:35,showArrows: true, autoReinitialise: true});
+                    $('#fulls_list').jScrollPane({verticalDragMinHeight:35,showArrows: true, autoReinitialise: true});
+
+                    $('#page_1 img').unbind('load')
+                    api = $('#viewer_context').data('jsp');
+                    api_left = $('#fulls_list').data('jsp');
+                    $('#page_notice').css('width', elem_width+"px")
+
+                    for(var i=0; i<last_page; i++) {
+                        page_offests[i] = $('#page_'+(i+1)).offset().top+api.getContentPositionY();
+                    }
+
+                })
+
+
+
+                /*
+                window.onresize = function () {
+                    try {
+                        init_fulls(true)
+                        for(var i=1; i<=last_page; i++) {
+                            apply_zoom(i, "plus")
+                        }
+                        api_left.reinitialise()
+                        api.reinitialise()
+                    } catch(e) {}
+                }
+                */
+
+
+                var error_load_img_list = []
+
+                // Fix for broken images by the server
+                $("#viewer_context img").error(function(){
+                    var sr = $(this).attr('src').split('/')
+                    var at = sr[sr.length-1]
+                    var broke_img = at.split("&")[0]
+                    if($.inArray(broke_img, error_load_img_list)!=-1) {
+                        $(this).attr('src', 'http://wl.figshare.com/static/img/other/doc-load-failed.png')
+                        return false
+                    }
+                    var broke_rez = at.split("&")[1].split("=")[1]
+                    error_load_img_list.push(broke_img)
+                    
+                    $(this).attr('src', "http://images.figshare.com/resize/"+(parseInt(broke_rez)+2)+"/457986/p_457986_0"+broke_img+".png")
+                    
+
+                    //$(this).attr('src', 'http://docimg2.figshare.com/?url=http://previews.figshare.com/457986/'+broke_img+'&width='+(parseInt(broke_rez)+2))
+                    //$(this).attr('src', "http://images.figshare.com/?url=http://previews.figshare.com/457986/p_457986_0"+broke_img+".png&width="+(parseInt(broke_rez)+2))
+                });
+
+
+
+
+                //---------------------------------------------------------------------------
+                function load_image(j) {
+                    if(j!=0 && $.inArray(j, loaded_items)!=-1) {
+                        return false
+                    }
+                    var cont_elem = $('#page_'+j+' div')
+                    if(cont_elem.hasClass('download_notice')) return false;
+
+                    var el_w = zoomz[zoom_level]
+                    //cont_elem.html("<img src='/img/457986/"+j+"/w="+el_w+"' style=''/>");
+
+                    var cont_img = $('img', cont_elem)
+                    //cont_img.attr('src', 'http://docimg2.figshare.com/?url=http://previews.figshare.com/457986/p_457986_0'+j+'.png&width='+el_w)
+                    
+                        load_img_func(cont_img, el_w, j)
+                        //cont_img.attr('src', "http://images.figshare.com/resize/"+el_w+"/457986/p_457986_0"+j+".png")
+                    
+                    //cont_img.attr('src', "http://images.figshare.com/?url=http://previews.figshare.com/457986/p_457986_0"+j+".png&width="+el_w)
+
+                    $('img', cont_elem).load(function () {
+                        var h = $(this).height()
+                        cont_elem.css('height', h+'px')
+                        var cat = elem_height - 60 - h
+                        if(cat>20) {
+                            api.reinitialise()
+                        }
+                        for(var i=j-1; i<last_page; i++) {
+                            page_offests[i] = $('#page_'+(i+1)).offset().top+api.getContentPositionY();
+                        }
+                        //$(this).css('visibility', 'visible')
+                    })
+                    loaded_items.push(j)
+                }
+
+                function img_in_view_area(i) {
+                    try {
+                        var api_pos = api.getContentPositionY()
+                    }catch(e) {return false}
+
+                    var pag_height = $('#viewer_context').height()
+
+                    var cond_1, cond_2, cond_3;
+                    cond_1 = (page_offests[i]>api_pos && page_offests[i]<(pag_height+api_pos));
+                    cond_2 = ((page_offests[i]+cur_elem_height/2) > api_pos && (page_offests[i]+cur_elem_height/2)<(pag_height+api_pos));
+                    cond_3 = ((page_offests[i]+cur_elem_height*0.8) > api_pos && (page_offests[i]+cur_elem_height*0.8)<(pag_height+api_pos));
+
+                    if(cond_1 || cond_2 || cond_3) {
+                        return true;
+                    } else {
+                        return false;
+                    }
+                }
+
+                //---------------------------------------------------------------------------
+                function load_preview(i) {
+                    if(pos==1) {
+                        $('#prev').addClass('disabled')
+                    } else {
+                        $('#prev').removeClass('disabled')
+                    }
+
+                    if(pos==last_page) {
+                        $('#next').addClass('disabled')
+                    } else {
+                        $('#next').removeClass('disabled')
+                    }
+
+                    for(i=0; i<last_page; i++) {
+                        if(img_in_view_area(i)) {
+                            load_image(i+1)
+                        }
+                    }
+                }
+
+                //var api = $('#viewer_context').data('jsp');
+                var drag_pos = 0;
+
+
+                //---------------------------------------------------------------------------
+                var calculate_pos = function (scrollPositionY) {
+                    var pos_save = pos;
+                    var set_left_menu = function () {
+                        if(full_screen==true) {
+                            if(pos!=0 && pos<=last_page) {
+                                $('#fulls_list  img').css('border', '1px solid #ccc')
+                                var img = $('#fulls_list #l_img_'+pos+" img")
+                                if(img.length==0) {
+                                    var img = $('#fulls_list #l_img_'+pos+" span")
+                                }
+                                img.css('border', '1px solid red')
+                                var of = img.offset().top
+                                var ofs = api_left.getContentPositionY()
+                                if(of>doc_height || of<0) {
+                                    api_left.scrollToY(of+ofs-60, 1000)
+                                }
+                            }
+                        }
+                    }
+
+                    if(def_pos) {
+                        if(img_in_view_area(def_pos-1)) {
+                            set_left_menu()
+                            $('#doc_position span').html(pos)
+                            setTimeout(function () { load_preview() }, 200);
+                            return false;
+                        } else {
+                            def_pos = false;
+                        }
+                    }
+
+                    if(typeof scrollPositionY!='undefined') {
+                        var api_pos = scrollPositionY
+                        var ceva = page_offests
+
+                        for(i=0; i<last_page; i++) {
+                            if(ceva[i]-(cur_elem_height*0.4)>scrollPositionY) {
+                                pos = i
+                                if(pos==0) pos=1
+                                set_left_menu()
+                                $('#doc_position span').html(pos)
+                                setTimeout(function () { load_preview(pos) }, 200);
+                                break
+                            } else if(i+1==last_page) {
+                                pos = last_page
+                                set_left_menu()
+                                load_preview(last_page)
+                                $('#doc_position span').html(last_page)
+                            }
+                        }
+                    } else {
+                        var api_pos = api.getContentPositionY()
+                        for(var i=1; i<=last_page; i++) {
+                            if(page_offests[i-1]-(cur_elem_height*0.4)<api_pos) {
+                                pos = i
+                                set_left_menu()
+                                $('#doc_position span').html(i)
+                                setTimeout(function () { load_preview(i) }, 200);
+                                break
+                            }
+                        }
+                    }
+
+                }
+
+                var stop_timeout = false;
+
+                //---------------------------------------------------------------------------
+                $('#viewer_context').bind(
+                    'jsp-scroll-y',
+                    function(event, scrollPositionY, isAtTop, isAtBottom) {
+                        clearTimeout(stop_timeout);
+                        stop_timeout = setTimeout(function() {
+                            calculate_pos(scrollPositionY)
+                        }, 200);
+                    }
+                );
+
+                //---------------------------------------------------------------------------
+                var apply_zoom = function (i, ztype) {
+                    var photo = $('#page_'+i+' div')
+                    var width = zoomz[zoom_level]
+                    $('#page_'+i).css('width', width+'px')
+                    var img = $('#page_'+i+' div img')
+                        if(img.attr('src').split('=').splice(-1)[0]!="160") {
+                            //throw "Err1";
+                            //img.attr('src', "http://docimg2.figshare.com/?url=http://previews.figshare.com/457986/p_457986_0"+i+".png&width="+width)
+                            
+                            load_img_func(img, width, i)
+                            //img.attr('src', "http://images.figshare.com/resize/"+width+"/457986/p_457986_0"+i+".png")
+                            
+                            //img.attr('src', "http://images.figshare.com/?url=http://previews.figshare.com/457986/p_457986_0"+i+".png&width="+width)
+                        }
+
+                        photo.css('height', $('#page_'+i+' div img').height()+'px');
+                        var cur_elem_height_tmp = $('#page_'+i+' div img').height()
+                        if(cur_elem_height_tmp>0) {
+                            cur_elem_height = cur_elem_height_tmp
+                        }
+
+                    try {
+                        photo.css('height', $('#page_1 div img').height()+'px');
+                        //
+                    } catch(e) {
+                        photo.css('height', $('#page_1 div img').height()+'px');
+                    }
+                    page_offests[i-1] = photo.offset().top+api.getContentPositionY();
+                    $('#page_notice').css('width', width+"px")
+                }
+
+                //---------------------------------------------------------------------------
+                var calc_offset = function (i) {
+                    var photo = $('#page_'+i+' div')
+                    var cur_pos = photo.offset().top+api.getContentPositionY();
+                    return cur_pos
+                }
+
+                //---------------------------------------------------------------------------
+                $('#zoom_plus').live('click', function () {
+                    var photo, width;
+                    if(zoom_level<zoomz.length-1) {
+                        zoom_level += 1
+                        $("#zoom_minus").removeClass('disabled')
+                        if(zoom_level==zoomz.length-1) {
+                            $(this).addClass('disabled')
+                        }
+                    } else {
+                        return false;
+                    }
+                    var old_offset = calc_offset(pos)
+                    //var last_page =
+                    for(var i=1; i<=last_page; i++) {
+                        apply_zoom(i, "plus")
+                    }
+
+                    var b = api.getPercentScrolledY()
+
+                    api.reinitialise()
+
+                    var cur_offset = calc_offset(pos)
+                    api.scrollByY(cur_offset - old_offset)
+
+                });
+
+                //---------------------------------------------------------------------------
+                $('#zoom_minus').live('click', function () {
+                    var photo, width;
+
+                    if(zoom_level>=1) {
+                        zoom_level -= 1
+                        $("#zoom_plus").removeClass('disabled')
+                        if(zoom_level==0) {
+                            $(this).addClass('disabled')
+                        }
+                    } else {
+                        return false;
+                    }
+                    var old_offset = calc_offset(pos)
+
+                    //var last_page =
+                    for(var i=1; i<=last_page; i++) {
+                        apply_zoom(i, 'minus')
+                    }
+                    api.reinitialise()
+
+
+                    var cur_offset = calc_offset(pos)
+                    api.scrollByY(cur_offset - old_offset)
+
+                    if(api.getIsScrollableH()==false && api.getContentPositionX()!=0) {
+                        $('#viewer_context div.jspPane').css('left', '0px')
+                    }
+                });
+
+
+                //---------------------------------------------------------------------------
+                $('#prev').click(function () {
+                    if(pos>1) {
+                        pos -= 1;
+                        if(pos==1) {
+                            api.scrollToY(0, 1000)
+                        } else {
+                            api.scrollToY(page_offests[pos-1]-60, 1000)
+                        }
+                    }
+                });
+
+                //---------------------------------------------------------------------------
+                $('#next').click(function () {
+                    if(pos<last_page) {
+                        pos += 1;
+                        api.scrollToY(page_offests[pos-1]-60, 1000)
+                    }
+                });
+                $('#fulls_list li a').click(function () {
+                    var id = $(this).attr('id').split('_')[2]
+                    pos = parseInt(id)
+                    def_pos = pos
+
+                    if(pos==1) {
+                        api.scrollToY(0, 1000)
+                    } else {
+                        api.scrollToY(page_offests[pos-1]-60, 1000)
+                    }
+                });
+
+            }
+
+
+            //---------------------------------------------------------------------------
+            if((($('#page_1 div').width()<10 && 9>0) || window.location.hash=='#ref') && window.location.hash!='#done') {
+                window.location.hash = "done"
+                document.location.reload(true)
+            } else {
+                if(9>0) {
+                    load_doc()
+                }
+            }
+
+
+        });
+
+    </script>
+    <style type='text/css'>
+    </style>
+</head>
+<body style="margin:0">
+
+<div id="fulls_container">
+    <div class="inner-shadow"></div>
+    
+    <div id='fulls_context' style='float: left;'>
+        <div id='viewer_context'>
+            
+            <div class='imgs' id='page_1'>
+                <div>
+                    
+                    <img src='http://previews.figshare.com/457986/250/p_01.png' />
+                    
+                </div>
+            </div>
+            
+            <div class='imgs' id='page_2'>
+                <div>
+                    
+                    <img src='http://previews.figshare.com/457986/250/p_02.png' />
+                    
+                </div>
+            </div>
+            
+            <div class='imgs' id='page_3'>
+                <div>
+                    
+                    <img src='http://previews.figshare.com/457986/250/p_03.png' />
+                    
+                </div>
+            </div>
+            
+            <div class='imgs' id='page_4'>
+                <div>
+                    
+                    <img src='http://previews.figshare.com/457986/250/p_04.png' />
+                    
+                </div>
+            </div>
+            
+            <div class='imgs' id='page_5'>
+                <div>
+                    
+                    <img src='http://previews.figshare.com/457986/250/p_05.png' />
+                    
+                </div>
+            </div>
+            
+            <div class='imgs' id='page_6'>
+                <div>
+                    
+                    <img src='http://previews.figshare.com/457986/250/p_06.png' />
+                    
+                </div>
+            </div>
+            
+            <div class='imgs' id='page_7'>
+                <div>
+                    
+                    <img src='http://previews.figshare.com/457986/250/p_07.png' />
+                    
+                </div>
+            </div>
+            
+            <div class='imgs' id='page_8'>
+                <div>
+                    
+                    <img src='http://previews.figshare.com/457986/250/p_08.png' />
+                    
+                </div>
+            </div>
+            
+            <div class='imgs' id='page_9'>
+                <div>
+                    
+                    <img src='http://previews.figshare.com/457986/250/p_09.png' />
+                    
+                </div>
+            </div>
+            
+        
+            <div class="notice" id='page_notice'>
+                <span>This document contains more than 9 pages. To see the remaining content please <a href="http://files.figshare.com/457986/Text_S1.pdf" class="normal-link" target="_blank">download the original file</a>.</span>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<div style="clear:both"></div>
+</div>
+</body>
+</html>

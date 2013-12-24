@@ -1,2 +1,4 @@
 ghp-import < 1.0.0
 remarkable < 1.0.0
+textlines < 1.0.0
+travis-solo < 1.0.0
