@@ -226,11 +226,98 @@ But, it is what it is.
 #30 technological singularity
 ![black_hole](resources/black_hole.png)
 ![singularity](resources/singularity.png)
+Are You Prepared For The Coming Of The Glorious Technological Singularity?
+The technological singularity is
+".. a future period during which the pace of technological change will be so rapid,
+its impact so deep, that human life will be irreversibly transformed"
+- Ray Kurzweil, The Singularity Is Near, 2005
 
 #31.1 ray
 ![kurzweil](resources/kurzweil.png)
+Raymond Kurzweil, once of the main proponents of the coming technological singularity, is,
+in my humble opinion, a great man.
+He is an example of the ingenuity and scale that technology has helped us
+unlock. His inventions
 #31.2 inventions
 ![invents](resources/invents.png)
+have helped millions of people access the wealth of textual knowledge
+(words! See, I still have a point!)
+
+About 10-15 years ago, Raymond decided to make a logarithmic plot of Moore's law's trend,
+but starting from before the integrated circuit. He discovered that if you extrapolate
+backwards in time, from electromagnetic calculators, relays, vacuum tubes, discrete circuits,
+Moore's law of integrated circuit shrinkage is in fact the (# 5th paradigm shift) of
+computing technology.
+
+(# logarithmic scale)
+The logarithmic plot across all paradigm shifts is not linear, but exponential.
+
+This Kurzweil dubs the (# law of accelerating returns).
+(# defn)
+At the end of each paradigm shift, as the efficiency of the technology tapers out,
+and the graph plateaus, we invent something to replace it, and the exponential curve
+starts anew (except at a faster rate).
+
+By extrapolating these trends into the future, Ray arrives at a magical number:
+2029. This is the year when compute resources will be cheap enough to make is feasible
+for us to faithfully reproduce the 10^11 (100 billion) neruons and 10^14 (100 trillion)
+synapses of the human brain in silicon.
+And then?
+We can't see past the event horizon.
+
+This is the singularity.
+
+Ray is serious about all this. He's a serious scientist. Serious to the tune of
+$20k (# http://longbets.org/1). Naturally, his views are met with skepticism by some.
+Mitchell Kapor (# kapor), for example (you may have heard of him - he invented (# Lotus 1-2-3),
+the first spreadsheet. Well, 2nd (# visicalc) came first. But, he was head of development at
+(# visicorp) and ...)
+But, I digress.
+
+Kapor believes in a kind of deus ex machine and posits that computers will never attain
+the inaffable qualities of humans.
+Appreciation of music, literature and the arts, (# quote from longbets).
+Our physicality, emotional, sensory apparatus and ...
+
+Mitch doesn't seem too perturbed by the potentially dystopian scenarios lurking behind the
+event horizon. He thinks that no computer will ever be as great, capable and inventive as Ray.
+
+(# Bill Joy) on the other hand (another famous dude, founded Sun, wrote vi) wrote a famous
+essay for Wired called "Why The Future Doesn't Need Us"
+He recounts (in an extremely well researched and well read (and bred)), scientifically bibliographised
+and cross referenced account of) the growing dread and unease that he felt after first meeting Ray
+and reading a partial preprint of his 1999 book "The Age Of Spiritual Machines" (# book cover)
+
+He is troubled by the seemingly inevitable dystopian future of a race of robots that can cogitate
+a million times faster than us.
+His essay ends with a kind of troubled, hesitant, doubtful wait-and-see attitue.
+(Kind of also  trusting in Ray to make it all come aout alright)
+
+Ray is the affable and (seemingly feckless) charmismatic poster boy of whatever he sets
+his big brain to. He swallows ~200 pills a day (so that he'll still be alive in 2029,
+at the ripe old age of 81) (# ray and terry pills.com)
+
+I bet he has his P.A. constrantly uploading his biometric data to the Kurzweil Data Farm.
+You _know_ he has his own data farm.
+Larry and Sergey were like "Zhure Ray, whatever you want Ray"
+Wow. That was awful. Sorry.
+
+
+----
+# dystopia
+Do you think that Ray or (# Andrew Ng) or (# Jeff Dean) or whoever is
+about to press the enter key in 2029 to initiate the boot sequence of
+the grand pappy of all super humanly intelligent consciousness, will pause
+in the brief (# onosecond) after the keyboard mechanism has sprung back
+(trust me, we'll still have keyboards then, they're the bicycles of text input)
+will he briefly consider if this was such a good idea after all, and if Larry
+had remembered to test the undo function like I asked him to. Oh, my coffee mug
+is empty, did I remember to refill the coffee machine after the last re-up?
+Do I smell burning? What's that sound? (# OMG) the coffee machine is alive!
+(# terminator) and I'm going to die of 3rd degree coffee burns now, how very sad
+
+
+
 #31.3 natural language
 "to bring natural language understanding to Google"
 #32 xkcd_internet_map.png
